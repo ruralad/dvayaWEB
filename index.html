@@ -14,47 +14,55 @@
 
 </head>
 <body>
+    <a href="#"><div id="freshersButton">Freshers Help Desk</div></a> 
+
     <!-- <img class="geciImage" src="./assets/geci2.jpeg" alt="" srcset=""> -->
     <!-- navbar, linked to forIndex/navbar.css -->
-    <div id="bar">
-        <div id="homeBar" class="navBarItem navItemLeft active">Home</div>
-        <div id="academicsBar" class="navBarItem navItemLeft" onclick="show('academicsDrop')">Academics</div>
-        <div id="communitiesBar" class="navBarItem navItemLeft" onclick="show('communitiesDrop')">Communities</div>
-        <div id="sfiBar" class="navBarItem navItemLeft" onclick="show('sfiDrop')">SFIGECI</div>
-        <div id="placementBar" class="navBarItem navItemLeft">Placements</div>
-        <div id="aboutBar" class="navBarItem navItemLeft">About</div>
-
-        <div id="helpBar" class="navBarItem navItemRight">Freshers Help Desk</div>
-    </div>
-    <div id="dropdown">
-        <div id="academicsDrop">
+    <div id="navBar">
+        <nav>
             <ul>
-                <li><a href="#">Departments</a> </li>
-                <li><a href="#">departments</a> </li>
-                <li><a href="#">departments</a> </li>
-                <li><a href="#">departments</a> </li>
-        </div>
-        <div id="communitiesDrop">
-            <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
-                <li>four</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Academics</a>
+                <!-- Academics DropDown -->
+                <ul>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>        
+                </li>
+                <li><a href="#">Facilities</a><ul>
+                    
+                    <li><a href="#">Educational Facilities</a>
+                        <li><a href="#">Sports</a>
+                    </li><li><a href="#">Hostels</a>
+                        <ul>
+                            <li><a href="">For Girls</a></li>
+                            <li><a href="">For Boys</a></li>
+                        </ul></li>
+                </ul>
+                </li>
+                <li><a href="#">Communities</a>
+                        <!-- Community DropDown -->
+                <ul>
+                    <li><a href="#">IEEE</a></li>
+                    <li><a href="#">FOSS CELL</a></li>
+                    <li><a href="#">GECI Developers</a></li>
+                    <li><a href="#">NSS</a>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">SFI-GECI</a>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Samskara</a></li>
+                        <li><a href="">Mathrukam</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Life@GECI</a></li>
             </ul>
-        </div>
-        <div id="sfiDrop">
-            <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>three</li>
-                <li>four</li>
-            </ul>
-        </div>
+        </nav>
     </div>
-
-    <div id="hero">
-    </div>
-
     <!-- scripts -->
     <script src="./forIndex/app.js"></script>
 </body>

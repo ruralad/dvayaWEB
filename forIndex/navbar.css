@@ -1,59 +1,65 @@
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-#bar{
-    position: relative;
-    display: flex;
-    width: 100%;
-    column-gap: 3%;
+#navBar {
+    margin: 0 auto;
     font-weight: 600;
-    z-index: 2;
 }
-#helpBar{
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+    position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:15px;
+	line-height: 30px;
+	text-decoration:none;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+}
+nav ul li:hover > ul {
+	display:inherit;
+}
+nav ul ul li {
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-30px; 
+	left:70px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' '; }
+li > a:only-child:after { content: ''; }
+
+#freshersButton{
+    font-weight: 600;
+    z-index: 1;
     position: absolute;
-    right: 3%;
-}
-.navItemRight{
+    right: 1%;
+    color: black;
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-    margin-top: -5px;
-}
-.navItemRight:hover{
-    background: black;
-    color: white;
-}
-.navBarItem {
     cursor: pointer;
 }
-#dropdown{
-    position: relative;
-    display: flex;
-    left: 3.2%;
+#freshersButton:hover{
+    color: white;
+    background: black;
 }
-#dropdown ul{
-    margin-top: -2%;
-}
-#dropdown li{
-        margin-top: 10%;
-}
-#academicsDrop{
-    position: relative;
-    display: none;
-}
-
-#communitiesDrop{
-    position: absolute;
-    display: none;
-    left:9% ;
-}
-#sfiDrop{
-    display: none;
-    margin-left: 18.8%;
-}
-#dropdown ul{
-    list-style: none;
-}
-
