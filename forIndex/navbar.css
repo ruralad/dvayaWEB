@@ -25,9 +25,11 @@ nav a {
 nav ul ul{
 background: rgba(228, 228, 228, 0.466);
 border-radius: 4px;
+animation: showDrop 1s;
 }
 nav ul ul ul{
     background: none;
+animation: showDrop 1s;
 }
 nav ul ul {
 	display: none;
@@ -68,4 +70,13 @@ li > a:only-child:after { content: ''; }
 #freshersButton:hover{
     color: white;
     background: black;
+}
+
+@keyframes showDrop{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
