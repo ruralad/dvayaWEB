@@ -1,0 +1,18 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+body{
+    /* background-color: rgba(109, 255, 248, 0.562); */
+    padding: 1%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#hero{
+    position: relative;
+}
+
+.geciImage{
+    width: 100%;   position: absolute;
+    z-index: 0;
+}

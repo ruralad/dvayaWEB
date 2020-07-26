@@ -1,0 +1,59 @@
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#bar{
+    position: relative;
+    display: flex;
+    width: 100%;
+    column-gap: 3%;
+    font-weight: 600;
+    z-index: 2;
+}
+#helpBar{
+    position: absolute;
+    right: 3%;
+}
+.navItemRight{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: -5px;
+}
+.navItemRight:hover{
+    background: black;
+    color: white;
+}
+.navBarItem {
+    cursor: pointer;
+}
+#dropdown{
+    position: relative;
+    display: flex;
+    left: 3.2%;
+}
+#dropdown ul{
+    margin-top: -2%;
+}
+#dropdown li{
+        margin-top: 10%;
+}
+#academicsDrop{
+    position: relative;
+    display: none;
+}
+
+#communitiesDrop{
+    position: absolute;
+    display: none;
+    left:9% ;
+}
+#sfiDrop{
+    display: none;
+    margin-left: 18.8%;
+}
+#dropdown ul{
+    list-style: none;
+}
+
