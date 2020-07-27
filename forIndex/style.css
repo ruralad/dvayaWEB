@@ -17,10 +17,10 @@ body{
 #collegeName{
     font-size: 50px;
     text-align: center;
-    animation : showCollegeName 2s;
+    animation : showSlowly 2s;
 }
 
-@keyframes showCollegeName {
+@keyframes showSlowly {
     from{
         opacity: 0;
     }
@@ -28,3 +28,4 @@ body{
         opacity: 1;
     }
 }
+
