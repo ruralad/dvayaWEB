@@ -1,7 +1,10 @@
+:root{
+	--nav-TextColor : white;
+}
 #navBar {
     margin: 0 auto;
 	font-weight: 600;
-	animation: showSlowly 2s ease;
+	animation: showSlowly 1s ease;
 }
 #menuBurger{
 	display: none;
@@ -20,13 +23,12 @@ nav ul li {
 nav a {
 	display:block;
 	padding:0 10px;	
-	color:black;
+	color:var(--nav-TextColor);
 	font-size:15px;
 	line-height: 30px;
     text-decoration:none;
 }
 nav ul ul{
-background: rgba(228, 228, 228, 0.466);
 border-radius: 4px;
 animation: showDrop 1s;
 }
@@ -64,15 +66,15 @@ li > a:only-child:after { content: ''; }
     z-index: 1;
     position: absolute;
     right: 1%;
-    color: black;
-    border: 2px solid black;
+    color: var(--nav-TextColor);
+    border: 2px solid var(--nav-TextColor);
     border-radius: 3px;
     padding: 5px;
     cursor: pointer;
 }
-#freshersButton:hover{
-    color: white;
-    background: black;
+#freshersButton:hover{	
+	background-color: white;
+	color: black;	
 }
 
 @keyframes showDrop{
@@ -111,7 +113,6 @@ li > a:only-child:after { content: ''; }
 }
 
 .hamburger {
-	margin-top: ;
 	width: 30px;
 	height: 30px;
 	/* Hambuger hover animation */

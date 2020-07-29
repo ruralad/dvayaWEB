@@ -17,4 +17,3 @@ menuBurger.onclick = () => {
     }
     menuBurgerOpen =!menuBurgerOpen;
 }
-

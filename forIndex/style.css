@@ -1,3 +1,6 @@
+:root{
+    --college-HeadColor : white;
+}
 *{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -6,8 +9,13 @@ body{
     /* background-color: rgba(109, 255, 248, 0.562); */
     width: 100%;
     overflow-x: hidden;
+    background: url('../assets/college_frontview.jpg');
+    background-size: 100%;
+    background-color: rgba(184, 146, 65, 0.671);
+    background-repeat: no-repeat;
 }
 #hero{
+    color: var(--college-HeadColor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +27,10 @@ body{
     text-align: center;
     animation : showSlowly 2s;
 }
-
+#collegeSpan{
+    font-size: 50px;
+    animation: showSlowly 2s;
+}
 @keyframes showSlowly {
     from{
         opacity: 0;
