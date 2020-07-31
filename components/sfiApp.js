@@ -5,7 +5,6 @@ let navBar = document.getElementById('navBar');
 let sfiBody = document.getElementById('hero');
 
 let menuBurgerOpen = false;
-
 menuBurger.onclick = () => { 
     if(!menuBurgerOpen){
         menuBurger.classList.toggle('is-opened');

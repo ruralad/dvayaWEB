@@ -3,10 +3,26 @@
     font-size: 15px;
 }
 body{
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     margin: .5%;
-    color: white;
+    color: rgb(0, 0, 0);
     overflow: hidden;
+}
+.roundedButton{
+    display: flex;
+    font-weight: 600;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.roundedButton a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+#hero{
+    animation: show 3s ease;
 }
 .front{
     position: relative;
@@ -19,10 +35,10 @@ body{
     height: 500px;
 }
 .sfiLogo{
-    filter: invert(200%);
     margin: auto;
     flex: 1;
     text-align: center;
+
 }
 .sfiLogo img{
     width: 50%;
@@ -30,16 +46,39 @@ body{
 .writing{
     flex: 1;
     margin: auto;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+.boldWriting{
     font-weight: 600;
-    font-size: 80px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+/* animations */
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
+/* media  */
 @media(max-width : 750px){
     .front{
         flex-direction: column;
         height: 400px;
     }
+    .sfiLogo{
+        width: 80%;
+    }
     .writing{
+        font-size: 40px;
+    }
+    .boldWriting{
         font-size: 40px;
     }
 }
