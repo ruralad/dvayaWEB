@@ -2,6 +2,7 @@
 	--nav-TextColor : white;
 }
 #navBar {
+	position: relative;
     margin: 0 auto;
 	font-weight: 600;
 	animation: showSlowly 1s ease;
@@ -64,7 +65,8 @@ li > a:only-child:after { content: ''; }
 #freshersButton{
     font-weight: 600;
     z-index: 1;
-    position: absolute;
+	position: absolute;
+	top: 1%;
     right: 1%;
     color: var(--nav-TextColor);
     border: 2px solid var(--nav-TextColor);
@@ -77,40 +79,6 @@ li > a:only-child:after { content: ''; }
 	color: black;	
 }
 
-@keyframes showDrop{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-
-@media(max-width:750px){
-	#menuBurger{
-		position: absolute;
-		display: block;
-		padding: .5%;
-		cursor: pointer;
-	}
-	#navBar{
-		display: none;
-		justify-content: center;
-		align-items: center;
-		height: 600px;
-		text-align: center;
-	}
-	nav ul li{
-		display: inline;
-	}nav ul ul{
-		left: 120px;
-		top: 65px;
-	}
-	nav ul ul ul{
-		left: 10px;
-		top: 30px;
-	}
-}
 
 .hamburger {
 	width: 30px;
@@ -143,3 +111,55 @@ li > a:only-child:after { content: ''; }
   .hamburger.is-opened span:last-child {
 	transform: translateY(-9px) rotate(-45deg);
   }
+
+  ::-webkit-scrollbar{
+	  width: 0;
+  }
+
+
+  /* animations */
+  @keyframes showDrop{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes showSlowly {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+  /*media*/
+  
+@media(max-width:750px){
+	#menuBurger{
+		position: relative;
+		display: block;
+		padding: 2%;
+		cursor: pointer;
+	}
+	#navBar{
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-100px);
+		height: 600px;
+		text-align: center;
+	}
+	nav ul li{
+		display: inline;
+	}nav ul ul{
+		left: 120px;
+		top: 65px;
+	}
+	nav ul ul ul{
+		left: 10px;
+		top: 30px;
+	}
+}
