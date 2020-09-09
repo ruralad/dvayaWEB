@@ -1,78 +1,52 @@
 :root{
 	--nav-TextColor : white;
 }
-#navBar {
-	position: relative;
-    margin: 0 auto;
-	font-weight: 600;
-	animation: showSlowly 1s ease;
+#dvayaBox{
+	position: absolute;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+    font-size: 10px;
+
+}
+#dvayaBox img{
+	width: 50px;
+}
+#dvayaBox span{
+	margin-left: 5px;
+	margin-top: 7px;
+    font-size: 12px;
+}
+#navBar{
+	position: absolute;
+	right: 0;
+
+	display: flex;
+	flex-direction: row;
+	
+	padding : 10px;
+}
+
+#navBar div{
+	margin-left: 30px;
+}
+#navBar a{
+	text-decoration: none;
 }
 #menuBurger{
-	display: none;
-}
-nav ul {
-	padding: 0;
-  	margin: 0;
-	list-style: none;
-    position: relative;
-	}
-	
-nav ul li {
-	display:inline-block;
-	}
-
-nav a {
-	display:block;
-	padding:0 10px;	
-	color:var(--nav-TextColor);
-	font-size:15px;
-	line-height: 30px;
-    text-decoration:none;
-}
-nav ul ul{
-border-radius: 4px;
-animation: showDrop 1s;
-}
-nav ul ul ul{
-    background: none;
-animation: showDrop 1s;
-}
-nav ul ul {
-	display: none;
-	position: absolute; 
-
-}
-nav ul li:hover > ul {
-	display:inherit;
-}
-nav ul ul li {
-	float:none;
-	display:list-item;
 	position: relative;
+	display: block;
+	right: 0;
+	cursor: pointer;
 }
-
-nav ul ul ul li {
-	position: relative;
-	top:-30px; 
-	left:70px;
-}
-
-	
-/* Change this in order to change the Dropdown symbol */
-li > a:after { content:  ' '; }
-li > a:only-child:after { content: ''; }
-
 #freshersButton{
     font-weight: 600;
-    z-index: 1;
-	position: absolute;
-	top: 1%;
-    right: 1%;
+	position: relative;
     color: var(--nav-TextColor);
     border: 2px solid var(--nav-TextColor);
     border-radius: 3px;
     padding: 5px;
-    cursor: pointer;
+	cursor: pointer;
 }
 #freshersButton:hover{	
 	background-color: white;
@@ -115,51 +89,3 @@ li > a:only-child:after { content: ''; }
   ::-webkit-scrollbar{
 	  width: 0;
   }
-
-
-  /* animations */
-  @keyframes showDrop{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@keyframes showSlowly {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-  /*media*/
-  
-@media(max-width:750px){
-	#menuBurger{
-		position: relative;
-		display: block;
-		padding: 2%;
-		cursor: pointer;
-	}
-	#navBar{
-		display: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-100px);
-		height: 600px;
-		text-align: center;
-	}
-	nav ul li{
-		display: inline;
-	}nav ul ul{
-		left: 120px;
-		top: 65px;
-	}
-	nav ul ul ul{
-		left: 10px;
-		top: 30px;
-	}
-}

@@ -6,75 +6,28 @@
     <title>Dvaya | GEC Idukki</title>
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="./components/indexStyle.css">
+    <link rel="stylesheet" href="./components/indexPage/indexStyle.css">
     <link rel="stylesheet" href="./components/navbar.css">
 
 </head>
 <body>
-    <div class="bgImageCollegeFrontview"></div>
-
-    <!-- navbar, linked to components/navbar.css -->
-    <div class="hamburger" id="menuBurger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="bgImageCollegeFrontview bg" id="backgroundImage"></div>
+    <div id="dvayaBox">
+        <img src="./assets/dvayaLogo.png" alt="">
+        <span>DVAYA <BR> Portal To Geci</BR></span>
     </div>
-
-      <a href="#"><div id="freshersButton">Freshers Help Desk</div></a> 
     <div id="navBar">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Academics</a>
-                <!-- Academics DropDown -->
-                <ul>
-                    <li><a href="#">Departments</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Placements</a></li>
-                </ul>        
-                </li>
-                <li><a href="#">Facilities</a><ul>
-                    
-                    <li><a href="#">Educational Facilities</a>
-                        <li><a href="#">Sports</a>
-                    </li><li><a href="#">Hostels</a>
-                        <ul>
-                            <li><a href="">For Girls</a></li>
-                            <li><a href="">For Boys</a></li>
-                        </ul></li>
-                </ul>
-                </li>
-                <li><a href="#">Communities</a>
-                        <!-- Community DropDown -->
-                <ul>
-                    <li><a href="#">IEEE</a></li>
-                    <li><a href="#">FOSS CELL</a></li>
-                    <li><a href="#">GECI Developers</a></li>
-                    <li><a href="#">NSS</a>
-                    </li><li><a href="#">Clubs</a>
-                        <ul>
-                            <li><a href="#">Drawing</a></li>
-                            <li><a href="#">Dance</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-                </li>
-                <li><a href="./sfi.html">SFI-GECI</a>
-                   
-                </li>
-                <li><a href="#">Life@GECI</a></li>
-            </ul>
-        </nav>
-    </div> <!--navbar ends-->
-    <div id="hero">
-        <div id="collegeName"> Welcome To <br><span id="collegeSpan">GEC Idukki</span>
+        <a href="#"><div id="freshersButton">Freshers Help Desk</div></a> 
+        <div class="hamburger" id="menuBurger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </div>
+    </div> <!--navbar ends-->
     <!-- scripts -->
-    <script src="./components/app.js"></script>
+    <script src="./components/indexPage/indexApp.js"></script>
 </body>
 </html>
