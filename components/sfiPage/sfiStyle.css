@@ -1,82 +1,80 @@
-*{
+:root {
+    --nav-TextColor: rgb(240, 240, 240);
+    --nav-DropBG: rgb(241, 241, 241);
+    --nav-DropTextColor: rgb(27, 27, 27);
+}
+
+* {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
-body{
+
+body {
     background-color: rgb(255, 255, 255);
     margin: .5%;
     color: rgb(0, 0, 0);
-    overflow: hidden;
-}
-.roundedButton{
-    display: flex;
-    font-weight: 600;
-    width: 50px;
+    overflow-x: hidden;
 }
 
-.roundedButton a{
-    margin: auto;
-    text-decoration: none;
-    color: black;
-}
-#hero{
-    animation: show 3s ease;
-}
-.front{
-    position: relative;
+#hero {
     display: flex;
-    flex-direction: row;
-
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-
-    height: 500px;
+    justify-content: center;
+    height: 100vh;
 }
-.sfiLogo{
-    margin: auto;
-    flex: 1;
-    text-align: center;
+
+#hero img {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    width: 102%;
+    margin-left: -10px;
+    filter: brightness(30%);
+}
+
+#hero .sfiFront {
+    height: 105vh;
+    object-fit: cover;
+}
+
+#hero h1 {
+    color: rgb(180, 0, 0);
+    font-size: 30px;
 
 }
-.sfiLogo img{
+
+#hero p {
     width: 50%;
+    text-align: center;
+    color: white;
 }
-.writing{
-    flex: 1;
-    margin: auto;
-    font-weight: 400;
-    font-size: 50px;
+
+#hero .sfiSubs {
+    margin-top: 100px;
     text-align: center;
 }
-.boldWriting{
-    font-weight: 600;
-    font-size: 50px;
-    text-align: center;
-    color: red;
+
+#hero .sfiSubs a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+
 }
+
+#about {
+    height: 100vh;
+}
+
+#samskara {
+    height: 100vh;
+}
+
+#mathrukam {
+    height: 100vh;
+}
+
 /* animations */
-@keyframes show {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
 
 /* media  */
-@media(max-width : 750px){
-    .front{
-        flex-direction: column;
-        height: 400px;
-    }
-    .sfiLogo{
-        width: 80%;
-    }
-    .writing{
-        font-size: 40px;
-    }
-    .boldWriting{
-        font-size: 40px;
-    }
-}
+@media(max-width : 750px) {}

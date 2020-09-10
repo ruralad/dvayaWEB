@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SFI GECI</title>
+    <title>Dvaya | GEC Idukki</title>
+
     <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--english-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;600&display=swap" rel="stylesheet">
+    <!--malayalam-->
 
-    <!-- styles -->
+    <!-- css -->
     <link rel="stylesheet" href="./components/sfiPage/sfiStyle.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+
 </head>
+
 <body>
-    <div class="roundedButton" ><a href="./index.html">Home</a> </div>
-    <div id="hero"> <div class="front">
-        <div class="sfiLogo"><img src="./assets/gecisfiLOGO.png" alt=""></div>
-        <div class="writing">long live <span class="boldWriting">revolution.</span></div>
-    </div></div>
-   
+    <!-- navbar, linked to navbar.css,navApp.js -->
+    <div id="navBar">
+        <div id="dvayaBox">
+            <img src="./assets/dvayaLogo.png" alt="">
+            <span>DVAYA <br> Portal To Geci</br></span>
+        </div>
+        <div id="rightNav">
+            <a href="#">
+                <div id="freshersButton">Freshers Help Desk</div>
+            </a>
+            <div class="hamburger" id="menuBurger" onclick="showDropdown()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="dropdown" class="rectangleDrop">
+                    <ul>
+                        <li><a href="./index.html">Home</a> </li>
+                        <li><a href="#">Departments</a> </li>
+                        <li><a href="#">Communities</a> </li>
+                        <li><a href="#">Life At Geci</a> </li>
+                        <li class="sfi"><a href="#">Sfi Geci</a> </li>
+                        <li class="bottomOfNav1"><a href="#">Notebank</a> </li>
+                        <li><a href="#">Anti-Ragging Cell</a> </li>
+                        <li class="bottomOfNav2"><a href="#">Dvaya Portal</a> </li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <!-- navbar end -->
 
+    <div id="hero">
+        <img src="./assets/sfi.jpg" alt="" class="sfiFront">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odit quisquam assumenda velit
+            laudantium, reprehenderit mollitia voluptatibus deleniti ipsum, dolore obcaecati aliquid numquam cupiditate
+            ut rerum id aspernatur dolorem voluptates debitis. A atque, sed doloremque velit tempora cupiditate ad
+            impedit qui eveniet molestiae fugit, nobis ipsum, voluptas in possimus sapiente!</p>
+        <div class="sfiSubs">
+            <a href="#about">about</a>
+            <a href="#samskara">samskara</a>
+            <a href="#mathrukam">mathrukam</a>
+        </div>
+    </div>
+    <div id="about">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex dolorem nemo, dignissimos assumenda
+            enim quasi corporis animi quis. Dolorem atque voluptatem quo alias quidem explicabo molestias dolore, porro
+            asperiores in unde quis debitis odit, earum perferendis quisquam facere quaerat cumque iusto delectus,
+            voluptates quibusdam. Eligendi exercitationem atque aperiam maxime nemo? Vero atque illo odit omnis deserunt
+            officia sapiente ex vitae quibusdam consequatur, voluptate inventore id perferendis architecto corporis
+            veniam molestias qui expedita facere error numquam explicabo laudantium dolore eligendi. Iste minima
+            repellat odio mollitia blanditiis praesentium sunt illo velit labore obcaecati cumque suscipit, voluptate
+            cupiditate necessitatibus expedita soluta! Asperiores?</p>
+    </div>
+    <div id="samskara">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex dolorem nemo, dignissimos assumenda
+            enim quasi corporis animi quis. Dolorem atque voluptatem quo alias quidem explicabo molestias dolore, porro
+            asperiores in unde quis debitis odit, earum perferendis quisquam facere quaerat cumque iusto delectus,
+            voluptates quibusdam. Eligendi exercitationem atque aperiam maxime nemo? Vero atque illo odit omnis deserunt
+            officia sapiente ex vitae quibusdam consequatur, voluptate inventore id perferendis architecto corporis
+            veniam molestias qui expedita facere error numquam explicabo laudantium dolore eligendi. Iste minima
+            repellat odio mollitia blanditiis praesentium sunt illo velit labore obcaecati cumque suscipit, voluptate
+            cupiditate necessitatibus expedita soluta! Asperiores?</p>
+    </div>
+    <div id="mathrukam">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex dolorem nemo, dignissimos assumenda
+            enim quasi corporis animi quis. Dolorem atque voluptatem quo alias quidem explicabo molestias dolore, porro
+            asperiores in unde quis debitis odit, earum perferendis quisquam facere quaerat cumque iusto delectus,
+            voluptates quibusdam. Eligendi exercitationem atque aperiam maxime nemo? Vero atque illo odit omnis deserunt
+            officia sapiente ex vitae quibusdam consequatur, voluptate inventore id perferendis architecto corporis
+            veniam molestias qui expedita facere error numquam explicabo laudantium dolore eligendi. Iste minima
+            repellat odio mollitia blanditiis praesentium sunt illo velit labore obcaecati cumque suscipit, voluptate
+            cupiditate necessitatibus expedita soluta! Asperiores?</p>
+    </div>
     <!-- scripts -->
-    <script src="./components/sfiApp.js"></script>
+    <script src="./components/sfiPage/sfiApp.js"></script>
+    <script src="./components/navApp.js"></script>
 </body>
+
 </html>
