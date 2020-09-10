@@ -14,20 +14,35 @@
 
 </head>
 <body>
-    <div class="bgImageCollegeFrontview bg" id="backgroundImage"></div>
-    <div id="dvayaBox">
-        <img src="./assets/dvayaLogo.png" alt="">
-        <span>DVAYA <BR> Portal To Geci</BR></span>
-    </div>
+    <!-- navbar, linked to navbar.css,navApp.js -->
     <div id="navBar">
-        <a href="#"><div id="freshersButton">Freshers Help Desk</div></a> 
-        <div class="hamburger" id="menuBurger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="dvayaBox">
+            <img src="./assets/dvayaLogo.png" alt="">
+            <span>DVAYA <br> Portal To Geci</BR></span>
         </div>
-    </div> <!--navbar ends-->
+        <div id="leftNav">
+            <a href="#"><div id="freshersButton">Freshers Help Desk</div></a> 
+            <div class="hamburger" id="menuBurger" onclick="showDropdown()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="dropdown" class="rectangleDrop">
+                    <ul>
+                        <li>One</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <img src="./assets/frontviewMAIN.jpg" alt="">
+    
+
+
     <!-- scripts -->
     <script src="./components/indexPage/indexApp.js"></script>
+    <script src="./components/navApp.js"></script>
 </body>
 </html>

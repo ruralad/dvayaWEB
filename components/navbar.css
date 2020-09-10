@@ -1,6 +1,9 @@
 :root{
 	--nav-TextColor : white;
 }
+#navBar{
+	position: relative;
+}
 #dvayaBox{
 	position: absolute;
 	padding: 10px;
@@ -17,7 +20,7 @@
 	margin-top: 7px;
     font-size: 12px;
 }
-#navBar{
+#leftNav{
 	position: absolute;
 	right: 0;
 
@@ -27,10 +30,10 @@
 	padding : 10px;
 }
 
-#navBar div{
+#leftNav div{
 	margin-left: 30px;
 }
-#navBar a{
+#leftNav a{
 	text-decoration: none;
 }
 #menuBurger{
@@ -71,7 +74,7 @@
   .hamburger:hover span:first-child {
 	transform: translateY(-3px);
   }
-  .hamburger:hover span:last-child {
+  .hamburger:hover span:nth-child(3) {
 	transform: translateY(3px);
   }
   
@@ -82,10 +85,43 @@
   .hamburger.is-opened span:nth-child(2) {
 	transform: scaleX(0);
   }
-  .hamburger.is-opened span:last-child {
+  .hamburger.is-opened span:nth-child(3) {
 	transform: translateY(-9px) rotate(-45deg);
   }
 
   ::-webkit-scrollbar{
 	  width: 0;
+  }
+
+  #dropdown{
+	  display: none;
+	  position: absolute;
+	  right: 3px;
+	  animation: showDropdown 1s ease-out;
+	  margin-top: 10px;
+  }
+  .rectangleDrop{
+	  width: 212px;
+	  height: 400px;
+	  background: rgb(255, 255, 255);
+	  border-radius: 3px;
+  }
+  #dropdown ul{
+	  list-style: none;
+  }
+  @keyframes showDropdown{
+	  from{
+		  opacity: 0%;
+		  transform: translate(0,-10px);
+	  }
+	  to{
+		  opacity: 100%;
+	  }
+  }
+
+
+
+  body img{
+	  width: 100%;
+	  pointer-events: none;
   }
