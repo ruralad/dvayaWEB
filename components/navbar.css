@@ -1,5 +1,5 @@
 :root{
-	--nav-TextColor : white;
+	--nav-TextColor : rgb(252, 252, 252);
 }
 #navBar{
 	position: relative;
@@ -97,31 +97,63 @@
 	  display: none;
 	  position: absolute;
 	  right: 3px;
-	  animation: showDropdown 1s ease-out;
+	  animation: showDropdown .8s ease-in-out forwards;
+	  transform-origin: top center;
 	  margin-top: 10px;
   }
   .rectangleDrop{
 	  width: 212px;
-	  height: 400px;
+	  height: 350px;
 	  background: rgb(255, 255, 255);
 	  border-radius: 3px;
   }
-  #dropdown ul{
+  #dropdown ul li{
 	  list-style: none;
+	  margin-top: 10px;
+	  margin-left: -10px;
+    font-weight: 500;
+    animation: showStuff .8s ease-in-out;
+  }
+  #dropdown ul li a{
+    color: black;
+  }
+  .sfi a{
+    margin-top: 20%;
+    display: inline-block;
+    background-color: rgb(70, 205, 223);
+    border-radius: 2px;
+    padding: 5px;
+    filter: invert();
+    text-transform: uppercase;
+  }
+  .bottomOfNav1 a{
+    display: inline-block;
+    margin-top: 20%;
+  }
+  .bottomOfNav2 a::after{
+    content: ' (closed)';
+    font-weight: 300;
+    font-size: 10px;
   }
   @keyframes showDropdown{
-	  from{
-		  opacity: 0%;
-		  transform: translate(0,-10px);
-	  }
-	  to{
-		  opacity: 100%;
-	  }
+	0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.01)
+    }
+    100% {
+        transform: scaleY(1)
+    }
   }
-
-
-
-  body img{
-	  width: 100%;
-	  pointer-events: none;
+  @keyframes showStuff{
+    0%{
+      opacity: 0;
+    }
+    80%{
+      opacity: .7;
+    }
+    100%{
+      opacity: 1;
+    }
   }
