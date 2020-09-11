@@ -21,6 +21,7 @@ html {
 }
 
 #dvayaBox span {
+  color: var(--nav-TextColor);
   margin-left: 5px;
   margin-top: 7px;
   font-size: 12px;
@@ -62,8 +63,9 @@ html {
 }
 
 #freshersButton:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--nav-TextColor);
+  color: var(--nav-DropBG);
+  transition: all .3s;
 }
 
 
@@ -119,12 +121,11 @@ html {
 
 .rectangleDrop {
   width: 212px;
-  height: 350px;
+  height: 340px;
   background: var(--nav-DropBG);
   border-radius: 3px;
 }
 
-#dropdown ul {}
 
 #dropdown ul li {
   list-style: none;
@@ -153,17 +154,16 @@ html {
 }
 
 .sfi a {
-  margin-top: 10%;
+  margin-bottom: 10%;
   display: inline-block;
   background-color: rgb(238, 89, 89);
   border-radius: 2px;
-  padding: 5px;
+  padding: 3px;
   text-transform: uppercase;
 }
 
 .bottomOfNav1 a {
   display: inline-block;
-  margin-top: 10%;
 }
 
 .bottomOfNav2 a::after {
@@ -239,7 +239,7 @@ html {
   }
 
   #dropdown ul li {
-    margin-top: -23px;
+    margin-left: -23px;
   }
 
 
