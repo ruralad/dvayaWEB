@@ -11,7 +11,6 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    margin: .5%;
     color: rgb(0, 0, 0);
     overflow-x: hidden;
 }
@@ -40,13 +39,14 @@ body {
 
 #hero h1 {
     color: rgb(180, 0, 0);
-    font-size: 30px;
-
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
 }
 
 #hero p {
     width: 50%;
     text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
     color: white;
 }
 
@@ -58,8 +58,14 @@ body {
 #hero .sfiSubs a {
     padding: 20px;
     text-decoration: none;
-    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgb(0, 213, 228);
 
+}
+
+.paragraphs p {
+
+    font-family: 'Baloo Chettan 2', cursive;
 }
 
 #about {
@@ -77,4 +83,40 @@ body {
 /* animations */
 
 /* media  */
-@media(max-width : 750px) {}
+@media(max-width : 600px) {
+    #hero h1 {
+        position: relative;
+        margin-top: 0%;
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #hero p {
+        width: 90%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #hero .sfiSubs {
+        margin: 0;
+        text-align: center;
+    }
+
+    #hero .sfiSubs a {
+        padding: 5px;
+        font-size: 10px;
+        font-family: 'Baloo Chettan 2', cursive;
+        display: block;
+    }
+
+    #hero img {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        width: 110%;
+        margin-left: -10px;
+        filter: brightness(30%);
+    }
+
+}
