@@ -124,9 +124,7 @@ html {
   border-radius: 3px;
 }
 
-#dropdown ul {
-  margin-top: 30px;
-}
+#dropdown ul {}
 
 #dropdown ul li {
   list-style: none;
@@ -138,6 +136,20 @@ html {
 
 #dropdown ul li a {
   color: var(--nav-DropTextColor);
+}
+
+#dropdown ul .heading {
+  color: rgb(0, 170, 23);
+  font-size: .8rem;
+}
+
+.seperatingLineNav {
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(175, 99, 0, 0.349);
 }
 
 .sfi a {
@@ -227,9 +239,9 @@ html {
   }
 
   #dropdown ul li {
-    margin-top: 10px;
-    margin-left: -23px;
+    margin-top: -23px;
   }
+
 
   .hamburger.is-opened span:first-child {
     transform: translateY(9px) rotate(45deg);
