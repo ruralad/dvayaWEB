@@ -1,15 +1,15 @@
 #navBar {
-  position: relative;
+  position: fixed;
+  margin-top: 10px;
 }
 
 html {
   scroll-behavior: smooth;
-
 }
+
 
 #dvayaBox {
   position: absolute;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   font-size: 10px;
@@ -29,72 +29,62 @@ html {
 
 #rightNav {
   position: absolute;
-  right: 0;
-
+  right: 20px;
   display: flex;
   flex-direction: row;
-
-  padding: 10px;
-}
-
-#rightNav div {
-  margin-left: 30px;
 }
 
 #rightNav a {
   text-decoration: none;
 }
 
-#menuBurger {
-  position: relative;
-  display: block;
-  right: 0;
-  cursor: pointer;
-}
-
 #freshersButton {
+  font-size: 20px;
   font-weight: 600;
-  position: relative;
   color: var(--nav-TextColor);
-  border: 2px solid var(--nav-TextColor);
+  border: 3px solid var(--nav-TextColor);
   border-radius: 3px;
-  padding: 5px;
+  padding: 4.5px;
   cursor: pointer;
+  margin-top: -3px;
+  margin-right: 20px;
 }
 
 #freshersButton:hover {
-  background-color: var(--nav-TextColor);
-  color: var(--nav-DropBG);
-  transition: all .3s;
+  box-shadow: 0px 0px 10px rgb(190, 190, 190);
+  transition: all 0.3s;
 }
 
+#menuBurger {
+  display: block;
+  cursor: pointer;
+}
 
 .hamburger {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 50px;
 }
 
 .hamburger span {
   display: block;
-  margin: 6px auto;
+  margin-bottom: 8px;
   background-color: var(--nav-TextColor);
-  width: 100%;
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .hamburger:hover span:first-child {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .hamburger:hover span:nth-child(3) {
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 /* Hambuger click animation to cross */
 .hamburger.is-opened span:first-child {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
 }
 
 .hamburger.is-opened span:nth-child(2) {
@@ -102,7 +92,7 @@ html {
 }
 
 .hamburger.is-opened span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
 }
 
 ::-webkit-scrollbar {
@@ -114,42 +104,70 @@ html {
   position: absolute;
   z-index: 2;
   right: 3px;
-  animation: showDropdown .8s ease-in-out forwards;
+  animation: showDropdown 0.8s ease-in-out forwards;
   transform-origin: top center;
   margin-top: 10px;
 }
 
 .rectangleDrop {
-  width: 212px;
-  height: 340px;
+  width: 280px;
+  margin-right: -15px;
+  height: 93vh;
   background: var(--nav-DropBG);
   border-radius: 3px;
 }
 
+#dropdown ul {
+  margin-left: -20px;
+  margin-top: 20px;
+
+}
 
 #dropdown ul li {
   list-style: none;
-  margin-top: 10px;
-  margin-left: -10px;
-  font-weight: 500;
-  animation: showStuff .8s ease-in-out;
+  margin-top: 15px;
+  animation: showStuff 0.8s ease-in-out;
+}
+
+#dropdown ul li:last-child a::before {
+  content: '©';
+  color: rgb(180, 0, 0);
+  font-size: 1rem;
+  display: block;
+}
+
+#dropdown ul li:nth-last-child(2) {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 70px;
+}
+
+#dropdown ul li:last-child a {
+  display: block;
+  color: var(--nav-DropTextColor);
+  opacity: .7;
+  position: absolute;
+  bottom: 0;
+  font-size: .8rem;
+  font-weight: 300;
+  padding-bottom: 20px;
 }
 
 #dropdown ul li a {
-  font-size: 15px;
   color: var(--nav-DropTextColor);
+  font-weight: 500;
+  font-size: 18px;
 }
 
-#dropdown ul .heading {
-  color: rgb(0, 170, 23);
-  font-size: .8rem;
+#dropdown ul li.heading {
+  color: rgb(112, 211, 82);
+  font-size: 1rem;
 }
 
 .seperatingLineNav {
-  position: absolute;
-  left: 0;
-  margin-top: 5px;
-  width: 100px;
+  position: relative;
+  margin-left: -20px;
+  width: 300px;
   height: 1px;
   background-color: rgba(175, 99, 0, 0.349);
 }
@@ -158,8 +176,8 @@ html {
   margin-bottom: 10%;
   display: inline-block;
   background-color: rgb(238, 89, 89);
-  border-radius: 2px;
-  padding: 3px;
+  border-radius: 3px;
+  padding: 5px;
   text-transform: uppercase;
 }
 
@@ -168,22 +186,22 @@ html {
 }
 
 .bottomOfNav2 a::after {
-  content: ' (closed)';
+  content: " (closed)";
   font-weight: 300;
   font-size: 10px;
 }
 
 @keyframes showDropdown {
   0% {
-    transform: scaleY(0)
+    transform: scaleY(0);
   }
 
   80% {
-    transform: scaleY(1.01)
+    transform: scaleY(1.01);
   }
 
   100% {
-    transform: scaleY(1)
+    transform: scaleY(1);
   }
 }
 
@@ -193,7 +211,7 @@ html {
   }
 
   80% {
-    opacity: .7;
+    opacity: 0.7;
   }
 
   100% {
@@ -201,7 +219,13 @@ html {
   }
 }
 
-@media (max-width : 480px) {
+@media (max-width: 480px) {
+  #navBar {
+    position: fixed;
+    width: 100vw;
+    margin-top: 5px;
+  }
+
   #dvayaBox {
     font-size: 10px;
   }
@@ -215,37 +239,64 @@ html {
   }
 
   #freshersButton {
-    font-weight: 400;
-    font-size: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 10px;
     border: 1px solid var(--nav-TextColor);
   }
 
   .hamburger {
-    width: 25px;
-    margin-top: -1%;
+    width: 30px;
+    height: 30px;
   }
 
   .hamburger span {
-    margin: 5px auto;
+    display: block;
+    margin-bottom: 7px;
+    background-color: var(--nav-TextColor);
     height: 2px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
   }
 
   .rectangleDrop {
-    width: 160px;
-    height: 330px;
+    width: 175px;
+    margin-right: -15px;
+    height: 95vh;
   }
 
   #dropdown ul li {
     font-size: 10px;
-    margin-left: -23px;
+    margin-top: 10px;
+    margin-left: -5px;
   }
 
+  #dropdown ul li a {
+    font-size: 15px;
+  }
 
   .hamburger.is-opened span:first-child {
     transform: translateY(9px) rotate(45deg);
   }
 
   .hamburger.is-opened span:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  #dropdown ul li:last-child a::before {
+    font-size: 1rem;
+  }
+
+  #dropdown ul li:last-child a {
+    font-size: .6rem;
+  }
+
+  #dropdown ul li.heading {
+    color: rgb(112, 211, 82);
+    font-size: .7rem;
+  }
+
+  .seperatingLineNav {
+    display: none;
   }
 }

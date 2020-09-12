@@ -1,21 +1,20 @@
 :root {
-    --nav-TextColor: rgb(44, 44, 44);
+    --nav-TextColor: rgb(56, 56, 56);
     --nav-DropBG: rgb(245, 245, 245);
     --nav-DropTextColor: rgb(44, 44, 44);
 }
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     color: rgb(209, 200, 200);
 }
 
 .rectangleDrop {
-    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    box-shadow: 0px 2px 5px rgb(209, 209, 209);
 }
 
 body {
-    margin: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow-x: hidden;
@@ -43,7 +42,7 @@ body {
     width: 50%;
 }
 
-@media (max-width : 480px) {
+@media (max-width: 480px) {
     .rightDownSVG {
         right: -30%;
         bottom: -5%;
