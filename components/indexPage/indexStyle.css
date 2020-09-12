@@ -22,11 +22,25 @@ body {
     /* background-color: rgb(0, 0, 0); */
 }
 
-#hero img {
+#hero1 #hero2 {
+    height: 100vh;
+}
+
+#hero1 img {
     position: absolute;
     z-index: -2;
+}
 
-    object-fit: cover;
-    width: 102%;
-    height: 100vh;
+.rightDownSVG {
+    right: -5%;
+    bottom: -20%;
+    width: 50%;
+}
+
+@media (max-width : 480px) {
+    .rightDownSVG {
+        right: -30%;
+        bottom: -5%;
+        width: 130%;
+    }
 }
