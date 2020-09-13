@@ -1,12 +1,12 @@
 #navBar {
   position: fixed;
   margin-top: 10px;
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 
 #dvayaBox {
