@@ -1,0 +1,23 @@
+:root {
+    --nav-TextColor: rgb(56, 56, 56);
+    --nav-DropBG: rgb(245, 245, 245);
+    --nav-DropTextColor: rgb(44, 44, 44);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: rgb(209, 200, 200);
+}
+
+main .head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main .head h1 {
+    font-size: 100px;
+}

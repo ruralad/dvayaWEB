@@ -219,11 +219,28 @@ html {
   }
 }
 
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
+/* media  */
 @media (max-width: 480px) {
   #navBar {
     position: fixed;
     width: 100vw;
-    margin-top: 5px;
+    margin-top: 3%;
   }
 
   #dvayaBox {
