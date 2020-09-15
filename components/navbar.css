@@ -18,14 +18,14 @@ html {
 }
 
 #dvayaBox img {
-  width: 50px;
+  width: 40px;
 }
 
 #dvayaBox span {
   color: var(--nav-TextColor);
   margin-left: 5px;
   margin-top: 7px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #rightNav {
@@ -40,14 +40,13 @@ html {
 }
 
 #freshersButton {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--nav-TextColor);
   border: 2px solid var(--nav-TextColor);
   border-radius: 3px;
-  padding: 4.5px;
+  padding: 3px;
   cursor: pointer;
-  margin-top: -3px;
   margin-right: 20px;
 }
 
@@ -58,17 +57,17 @@ html {
 
 #menuBurger {
   display: block;
+  margin-top: 3px;
   cursor: pointer;
 }
 
 .hamburger {
-  width: 40px;
-  height: 50px;
+  width: 25px;
 }
 
 .hamburger span {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   background-color: var(--nav-TextColor);
   height: 3px;
   border-radius: 5px;
@@ -85,7 +84,7 @@ html {
 
 /* Hambuger click animation to cross */
 .hamburger.is-opened span:first-child {
-  transform: translateY(11px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .hamburger.is-opened span:nth-child(2) {
@@ -93,7 +92,7 @@ html {
 }
 
 .hamburger.is-opened span:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 ::-webkit-scrollbar {
@@ -116,6 +115,7 @@ html {
   height: 93vh;
   background: var(--nav-DropBG);
   border-radius: 3px;
+  cursor: default;
 }
 
 #dropdown ul {
@@ -130,28 +130,6 @@ html {
   animation: showStuff 0.8s ease-in-out;
 }
 
-#dropdown ul li:last-child a::before {
-  content: '©';
-  font-size: 1rem;
-  display: block;
-}
-
-#dropdown ul li:nth-last-child(2) {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 70px;
-}
-
-#dropdown ul li:last-child a {
-  display: block;
-  color: var(--nav-DropTextColor);
-  opacity: .7;
-  position: absolute;
-  bottom: 0;
-  font-size: .6rem;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
 
 #dropdown ul li a {
   color: var(--nav-DropTextColor);
@@ -300,9 +278,6 @@ html {
     transform: translateY(-9px) rotate(-45deg);
   }
 
-  #dropdown ul li:last-child a::before {
-    font-size: 1rem;
-  }
 
   #dropdown ul li:last-child a {
     font-size: .6rem;
