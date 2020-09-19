@@ -1,0 +1,71 @@
+:root {
+    --nav-TextColor: rgb(56, 56, 56);
+    --nav-DropBG: rgb(245, 245, 245);
+    --nav-DropTextColor: rgb(44, 44, 44);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: rgb(209, 200, 200);
+}
+
+body {
+    max-width: 100%;
+}
+
+main .head {
+    position: absolute;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+main .head h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(45deg, rgb(227, 17, 255), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .head p {
+    color: rgba(51, 51, 51, 0.568);
+    margin-top: -2%;
+}
+
+main .head a {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.568);
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (max-width: 480px) {
+    main .head {
+        height: 70vh;
+    }
+
+    main .head h1 {
+        font-size: 24px;
+        background: -webkit-linear-gradient(45deg, rgb(227, 17, 255), rgb(30, 248, 201));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    main .head p {
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    main .head a {
+        position: absolute;
+        bottom: 0;
+        font-size: 13px;
+    }
+}
