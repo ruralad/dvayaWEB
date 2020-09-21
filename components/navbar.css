@@ -102,7 +102,7 @@ html {
 #dropdown {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   right: 3px;
   animation: showDropdown 0.8s ease-in-out forwards;
   transform-origin: top center;
@@ -134,7 +134,8 @@ html {
 #dropdown ul li a {
   color: var(--nav-DropTextColor);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+
 }
 
 #dropdown ul li.heading {
