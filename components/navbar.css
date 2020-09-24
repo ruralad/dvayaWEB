@@ -47,7 +47,7 @@ html {
   border-radius: 3px;
   padding: 3px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 #freshersButton:hover {
@@ -56,6 +56,9 @@ html {
 }
 
 #menuBurger {
+  position: absolute;
+  right: 0;
+  z-index: 2;
   display: block;
   margin-top: 3px;
   cursor: pointer;
@@ -104,13 +107,13 @@ html {
   position: absolute;
   z-index: 4;
   right: 3px;
-  animation: showDropdown 0.8s ease-in-out forwards;
+  animation: showDropdown .7s ease-out forwards;
   transform-origin: top center;
   margin-top: 10px;
 }
 
 .rectangleDrop {
-  width: 250px;
+  width: 15vw;
   margin-right: -15px;
   height: 93vh;
   background: var(--nav-DropBG);
@@ -140,7 +143,7 @@ html {
 
 #dropdown ul li.heading {
   color: rgb(112, 211, 82);
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .seperatingLineNav {
@@ -152,7 +155,7 @@ html {
 }
 
 .sfi a {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   display: inline-block;
   background-color: rgb(238, 89, 89);
   border-radius: 3px;
@@ -173,10 +176,6 @@ html {
 @keyframes showDropdown {
   0% {
     transform: scaleY(0);
-  }
-
-  80% {
-    transform: scaleY(1.01);
   }
 
   100% {
