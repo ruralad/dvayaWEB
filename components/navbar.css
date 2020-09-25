@@ -1,6 +1,8 @@
 #navBar {
-  position: relative;
-  margin-top: 5px;
+  position: absolute;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -8,13 +10,15 @@ html {
   scroll-behavior: smooth;
 }
 
-
 #dvayaBox {
   position: absolute;
   display: flex;
   flex-direction: row;
   font-size: 10px;
   color: var(--nav-TextColor);
+  left: 10px;
+  top: 5px;
+
 }
 
 #dvayaBox img {
@@ -30,7 +34,8 @@ html {
 
 #rightNav {
   position: absolute;
-  right: 0px;
+  top: 10px;
+  right: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -47,7 +52,7 @@ html {
   border-radius: 3px;
   padding: 3px;
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
 #freshersButton:hover {
@@ -56,10 +61,6 @@ html {
 }
 
 #menuBurger {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  display: block;
   margin-top: 3px;
   cursor: pointer;
 }
@@ -107,7 +108,7 @@ html {
   position: absolute;
   z-index: 4;
   right: 3px;
-  animation: showDropdown .7s ease-out forwards;
+  animation: showDropdown 0.7s ease-out forwards;
   transform-origin: top center;
   margin-top: 10px;
 }
@@ -115,35 +116,32 @@ html {
 .rectangleDrop {
   width: 15vw;
   margin-right: -15px;
-  height: 93vh;
   background: var(--nav-DropBG);
   border-radius: 3px;
   cursor: default;
 }
 
 #dropdown ul {
-  margin-left: -20px;
-  margin-top: 20px;
-
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #dropdown ul li {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 8px;
   animation: showStuff 0.8s ease-in-out;
 }
-
 
 #dropdown ul li a {
   color: var(--nav-DropTextColor);
   font-weight: 500;
   font-size: 14px;
-
 }
 
 #dropdown ul li.heading {
   color: rgb(112, 211, 82);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .seperatingLineNav {
@@ -157,7 +155,7 @@ html {
 .sfi a {
   margin-bottom: 5%;
   display: inline-block;
-  background-color: rgb(238, 89, 89);
+  background-color: rgba(238, 89, 89, 0.76);
   border-radius: 3px;
   padding: 5px;
   text-transform: uppercase;
@@ -277,14 +275,13 @@ html {
     transform: translateY(-6px) rotate(-45deg);
   }
 
-
   #dropdown ul li:last-child a {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   #dropdown ul li.heading {
     color: rgb(112, 211, 82);
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .seperatingLineNav {
