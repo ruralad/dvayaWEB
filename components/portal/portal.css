@@ -19,24 +19,5 @@ html {
 }
 
 body {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.image {
-    pointer-events: none;
-    filter: brightness(30%);
-    object-fit: cover;
-    width: 100vw;
-}
-
-#dvayaBox img {
-    filter: brightness(100%);
-}
-
-@media (max-width: 600px) {
-    .image {
-        height: 100vh;
-
-    }
+    background-color: rgb(24, 24, 24);
 }
