@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Bebas+Neue|Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+
+
+body{
+
+    font-family: 'Barlow', sans-serif;
+    background: rgba(92, 4, 207, 0.336);
+
+   /* background: linear-gradient(#ffffff 0%, #018080 100%);
+    background-size: 2000% 2000%;
+    */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.rect{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.219);
+    background: rgb(255, 255, 255);
+}
+.homeicon{
+    position: absolute;
+}
+.homeicon img{
+    width: 28px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.heading{
+    text-align: center;
+    margin-top: -30px;
+}
+.heading h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.heading h3{
+    margin-top: -45px;
+    color: rgb(184, 0, 0);
+}
+.about{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.maincontainer{
+    background: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.295);
+}
+
+.box{
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 220px;
+    height: 150px;
+    border-radius: 10%;
+    background: #c0c0c05e;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(107, 107, 107, 0.404);
+
+    
+}
+
+
+.box .dept{
+    margin: auto;
+    position: relative;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #009468c4;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.box .yearselect{
+    margin: auto;
+    margin-top: -20px;
+    color: #252525;
+    font-weight: bold;
+    font-size: 10px;
+}
+.hidebox{
+    margin: auto;
+    text-align: center;
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -13px;
+    
+}
+
+
+.smallbox{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #940000c9;
+    cursor: pointer;
+
+}
+.smallbox2{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #3b9400c9;
+    cursor: pointer;
+
+}
+.smallbox2:hover{
+    background: rgb(255, 0, 51);
+}
+.smallbox2 p{
+    position: relative;
+    text-align: center;
+    margin-top: 2px;
+    color: seashell;
+    text-decoration: none;
+    font-size: 12px;
+}
+.smallbox:hover{
+    background: rgb(255, 0, 51);
+}
+.smallbox p{
+    position: relative;
+    text-align: center;
+    margin-top: 2px;
+    color: seashell;
+    text-decoration: none;
+    font-size: 12px;
+}
+.syllabus{
+    margin: auto;
+    width: 60px;
+    height: 20px;
+    margin-top: -80px;
+    border-radius: 5px;
+    background: #3b9400c9;
+    display: flex;
+}
+.box .syllabus a{
+    margin: auto;
+    font-size: 11px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+footer{
+    position: relative;
+    margin-top: 10px ;
+    height: 100px;
+    display: flex;
+    background: rgb(29, 29, 29);
+    flex-direction: column;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+footer .copyright{
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+footer .copyright a{
+    
+    text-decoration: none;
+    color: rgb(121, 72, 255);
+}
+footer .social{
+    margin: auto;
+}
+
+footer .social img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+}

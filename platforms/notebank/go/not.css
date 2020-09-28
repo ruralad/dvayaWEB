@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Bebas+Neue|Fredoka+One&display=swap');
+
+
+
+body{
+
+    font-family: 'Barlow', sans-serif;
+    background: linear-gradient(rgb(177, 0, 177),rgb(44, 4, 97));
+   /* background: linear-gradient(#ffffff 0%, #018080 100%);*/
+    background-size: 100% 800%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.head{
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.head a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.desc{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.desc a{
+    text-decoration: none;
+    color: rgb(6, 223, 223);
+}
+
+
+
+
+footer{
+    position: relative;
+    margin-top: 10px ;
+    height: 100px;
+    display: flex;
+    background: rgb(29, 29, 29);
+    flex-direction: column;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.295);
+    
+}
+footer .copyright{
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer .copyright a{
+    
+    text-decoration: none;
+    color: rgb(163, 130, 252);
+}
+footer .social{
+    margin: auto;
+}
+
+footer .social img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
