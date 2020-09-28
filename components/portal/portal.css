@@ -21,3 +21,23 @@ html {
 body {
     background-color: rgb(24, 24, 24);
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+main h1 {
+    text-align: center;
+    font-size: .9rem;
+}
+
+main h1::after {
+    display: block;
+    content: '( closed until college re-opens )';
+    font-size: .6rem;
+    color: rgba(127, 255, 212, 0.541);
+    margin-top: 5px;
+}
