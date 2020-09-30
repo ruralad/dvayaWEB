@@ -1,0 +1,95 @@
+:root {
+    --nav-TextColor: rgb(236, 236, 236);
+    --nav-DropBG: rgb(221, 221, 221);
+    --nav-DropTextColor: rgb(26, 26, 26);
+}
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: rgb(209, 200, 200);
+}
+
+body {
+    background: rgb(243, 243, 243);
+}
+
+.bg {
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    height: 7.6vh;
+}
+
+.bg h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    font-size: 1.1rem;
+    color: var(--nav-TextColor);
+}
+
+article {
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+
+.helpdesk {
+    color: black;
+    margin-bottom: 2%;
+}
+
+.helpdesk h2 {
+    font-size: 1.2rem;
+
+}
+
+article .part {
+    position: relative;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+article .part h2 {
+    color: rgb(20, 20, 20);
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+article .part a {
+    display: block;
+    color: rgb(4, 145, 98);
+}
+
+article .part img {
+    width: 80vw;
+}
+
+article .part li {
+    color: black;
+}
+
+article .part .nodec {
+    margin-top: 1%;
+    list-style-type: decimal;
+}
+
+article .part .nodec li {
+    margin-top: .5%;
+}
+
+article .part p {
+    color: black;
+}
