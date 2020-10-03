@@ -189,7 +189,7 @@ main {
     width: 100vw;
     background: #ffffff;
     z-index: 2;
-    height: auto;
+    height: 340vh;
 }
 
 article {
@@ -256,4 +256,10 @@ article p {
 .final {
     position: relative;
     max-width: 50%;
+}
+
+.grad {
+    background: -webkit-linear-gradient(45deg, rgb(232, 56, 255), rgb(139, 141, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -3,17 +3,18 @@
 
 
 
-body{
+body {
 
     font-family: 'Barlow', sans-serif;
     background: #4d99f0;
-   /* background: linear-gradient(#ffffff 0%, #018080 100%);
+    /* background: linear-gradient(#ffffff 0%, #018080 100%);
     background-size: 2000% 2000%;
     */
     max-width: 100%;
     overflow-x: hidden;
 }
-.rect{
+
+.rect {
     width: 100%;
     height: 130px;
     margin-top: -10px;
@@ -21,42 +22,50 @@ body{
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.219);
     background: rgb(255, 255, 255);
 }
-.homeicon{
+
+.homeicon {
     position: absolute;
 }
-.homeicon img{
+
+.homeicon img {
     width: 28px;
     margin-left: 20px;
     margin-top: 8px;
 }
-.heading{
+
+.heading {
     text-align: center;
 }
-.heading h1{
+
+.heading h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     color: rgb(0, 0, 0);
 }
-.heading h1 a{
+
+.heading h1 a {
     text-decoration: none;
     color: black;
 }
-.heading h3{
+
+.heading h3 {
     margin-top: -30px;
     color: rgb(177, 0, 0);
     font-size: 15px;
 }
-.about{
+
+.about {
     text-align: center;
     font-size: 11px;
 }
-.about a{
+
+.about a {
     text-decoration: none;
     font-weight: 900;
     color: rgb(0, 1, 85);
 }
 
-.maincontainer{
+.maincontainer {
     background: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -68,7 +77,7 @@ body{
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.295);
 }
 
-.box{
+.box {
     margin: auto;
     box-sizing: border-box;
     margin-top: 15px;
@@ -81,11 +90,11 @@ body{
     flex-direction: column;
     box-shadow: 0px 6px 10px rgba(107, 107, 107, 0.404);
 
-    
+
 }
 
 
-.box .dept{
+.box .dept {
     margin: auto;
     position: relative;
     font-size: 25px;
@@ -95,22 +104,24 @@ body{
     pointer-events: none;
 }
 
-.box .yearselect{margin: auto;
+.box .yearselect {
+    margin: auto;
     color: #252525;
     font-weight: bold;
     font-size: 10px;
 }
-.hidebox{
+
+.hidebox {
     text-align: center;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-top: -53px;
-    
+
 }
 
 
-.smallbox{
+.smallbox {
     display: inline-block;
     width: 19px;
     height: 19px;
@@ -120,10 +131,12 @@ body{
     cursor: pointer;
 
 }
-.smallbox:hover{
+
+.smallbox:hover {
     background: rgb(255, 0, 51);
 }
-.smallbox p{
+
+.smallbox p {
     position: relative;
     text-align: center;
     margin-top: 2px;
@@ -133,19 +146,20 @@ body{
 }
 
 
-@media (min-width:641px){
+@media (min-width:641px) {
+
     /*the circles will be in row for big screens,
     utilising max screen space*/
-    .maincontainer{
+    .maincontainer {
         flex-direction: row;
     }
-    
+
 }
 
 
-footer{
+footer {
     position: relative;
-    margin-top: 10px ;
+    margin-top: 10px;
     height: 100px;
     display: flex;
     background: rgb(29, 29, 29);
@@ -153,168 +167,203 @@ footer{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     box-shadow: 0px 6px 10px rgba(41, 41, 41, 0.404);
-    
+
 }
-footer .copyright{
+
+footer .copyright {
+    display: none;
     margin: auto;
     text-align: center;
     font-size: 10px;
     font-weight: 500;
 }
 
-footer .copyright a{
-    
+footer .copyright a {
+
     text-decoration: none;
     color: rgb(133, 91, 250);
 }
-footer .social{
+
+footer .social {
     margin: auto;
 }
 
-footer .social img{
+footer .social img {
     width: 20px;
     margin-top: 5px;
     margin-left: 10px;
 }
 
-@media (min-width:320px)  { 
-    /* smartphones, iPhone, portrait 480x320 phones */ 
-    
-    .parse{
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+
+    .parse {
         pointer-events: none;
         position: absolute;
     }
-    .parse img{
+
+    .parse img {
         width: 200px;
         margin-top: 100%;
         margin-left: 100%;
         opacity: 90%;
-    }  
-    .parse2{
+    }
+
+    .parse2 {
         pointer-events: none;
         position: absolute;
     }
-    .parse2 img{
+
+    .parse2 img {
         width: 250px;
         margin-top: 590px;
         margin-left: -40%;
-      opacity: 90%;
-    }  
-    
-    
+        opacity: 90%;
+    }
+
+
 }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-  
-    .parse{
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+    .parse {
         position: absolute;
         pointer-events: none;
     }
-    .parse img{
+
+    .parse img {
         width: 300px;
         margin-top: 100%;
         margin-left: 60%;
         opacity: 90%;
-    }  
-    .parse2{
+    }
+
+    .parse2 {
         pointer-events: none;
         position: absolute;
     }
-    .parse2 img{
+
+    .parse2 img {
         width: 300px;
         margin-top: 590px;
         margin-left: -30%;
-      opacity: 90%;
-    }  
+        opacity: 90%;
+    }
 }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-  
-    .parse{
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    .parse {
         position: absolute;
         pointer-events: none;
     }
-    .parse img{
+
+    .parse img {
         width: 400px;
         margin-top: -10%;
         margin-left: 80%;
-      opacity: 70%;
-    }  
-    .parse2{
+        opacity: 70%;
+    }
+
+    .parse2 {
         pointer-events: none;
         position: absolute;
     }
-    .parse2 img{
+
+    .parse2 img {
         width: 200px;
         margin-top: 20px;
         margin-left: -10%;
-      opacity: 50%;
-    }  
+        opacity: 50%;
+    }
 }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-  
-    .parse{
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    .parse {
         pointer-events: none;
         position: absolute;
     }
-    .parse img{
+
+    .parse img {
         width: 400px;
         margin-top: -40px;
         margin-left: 550px;
-      opacity: 70%;
-    }  
-    .parse2{
+        opacity: 70%;
+    }
+
+    .parse2 {
         pointer-events: none;
         position: absolute;
     }
-    .parse2 img{
+
+    .parse2 img {
         width: 300px;
         margin-top: 230px;
         margin-left: 10%;
-      opacity: 90%;
-    }  
+        opacity: 90%;
+    }
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
-  .parse{
-      position: absolute;
-  }
-  .parse img{
-      width: 400px;
-      margin-top: -5%;
-      opacity: 90%;
-      margin-left: 700px;
-  } .parse2{
-    pointer-events: none;
-    position: absolute;
-}
-.parse2 img{
-    width: 300px;
-    margin-top: 230px;
-    margin-left: 10%;
-  opacity: 90%;
-} 
-footer{
-    margin-top: 150px;
-}
-}  
-@media (min-width:1281px){
-    .parse{
+
+@media (min-width:1025px) {
+
+    /* big landscape tablets, laptops, and desktops */
+    .parse {
         position: absolute;
     }
-    .parse img{
+
+    .parse img {
         width: 400px;
         margin-top: -5%;
         opacity: 90%;
         margin-left: 700px;
-    } .parse2{
-      pointer-events: none;
-      position: absolute;
-  }
-  .parse2 img{
-      width: 300px;
-      margin-top: 230px;
-      margin-left: 10%;
-    opacity: 90%;
-  } 
-  footer{
-    margin-top: 150px;
+    }
+
+    .parse2 {
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .parse2 img {
+        width: 300px;
+        margin-top: 230px;
+        margin-left: 10%;
+        opacity: 90%;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
 }
+
+@media (min-width:1281px) {
+    .parse {
+        position: absolute;
+    }
+
+    .parse img {
+        width: 400px;
+        margin-top: -5%;
+        opacity: 90%;
+        margin-left: 700px;
+    }
+
+    .parse2 {
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .parse2 img {
+        width: 300px;
+        margin-top: 230px;
+        margin-left: 10%;
+        opacity: 90%;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
 }

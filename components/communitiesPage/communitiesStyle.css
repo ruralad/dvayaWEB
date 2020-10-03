@@ -23,6 +23,10 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
+main {
+    position: relative;
+}
+
 main .head {
     position: relative;
     display: flex;
@@ -79,7 +83,7 @@ main .head a img {
 }
 
 section {
-    height: auto;
+    height: 260vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

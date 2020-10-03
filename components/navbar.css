@@ -119,6 +119,7 @@ html {
   background: var(--nav-DropBG);
   border-radius: 3px;
   cursor: default;
+  overflow: hidden;
 }
 
 #dropdown ul {
@@ -169,6 +170,12 @@ html {
   content: " (closed)";
   font-weight: 300;
   font-size: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: .8rem;
+  color: rgb(148, 148, 148);
 }
 
 @keyframes showDropdown {

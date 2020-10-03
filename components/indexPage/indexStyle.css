@@ -24,6 +24,8 @@ body {
 }
 
 .image {
+    position: absolute;
+    z-index: -1;
     pointer-events: none;
     filter: brightness(30%);
     object-fit: cover;
@@ -34,9 +36,41 @@ body {
     filter: brightness(100%);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main h1 {
+    font-size: 2rem;
+    color: rgb(240, 240, 240);
+    font-family: 'Chilanka', cursive;
+
+    text-align: center;
+    max-width: 70vw;
+    margin-bottom: 20px;
+}
+
+main p {
+    max-width: 70vw;
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     .image {
         height: 100vh;
 
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: .8rem;
     }
 }

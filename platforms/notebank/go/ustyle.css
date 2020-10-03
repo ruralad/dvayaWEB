@@ -3,17 +3,18 @@
 
 
 
-body{
+body {
 
     font-family: 'Barlow', sans-serif;
     background: #79ebffd0;
-   /* background: linear-gradient(#ffffff 0%, #018080 100%);
+    /* background: linear-gradient(#ffffff 0%, #018080 100%);
     background-size: 2000% 2000%;
     */
     max-width: 100%;
     overflow-x: hidden;
 }
-.rect{
+
+.rect {
     width: 100%;
     height: 150px;
     margin-top: 8px;
@@ -21,42 +22,51 @@ body{
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.219);
     background: rgb(255, 255, 255);
 }
-.homeicon{
+
+.homeicon {
     position: absolute;
 }
-.homeicon img{
+
+.homeicon img {
     width: 28px;
     margin-left: 20px;
     margin-top: 8px;
 }
-.heading{
+
+.heading {
     text-align: center;
-    
+
 }
-.heading h1{
+
+.heading h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     color: rgb(0, 0, 0);
 }
-.heading h1 a{
+
+.heading h1 a {
     text-decoration: none;
     color: black;
 }
-.heading h3{
+
+.heading h3 {
     margin-top: -30px;
     color: rgb(177, 0, 0);
     font-size: 15px;
 }
-.about{
+
+.about {
     text-align: center;
     font-size: 11px;
 }
-.about a{
+
+.about a {
     text-decoration: none;
     font-weight: 900;
     color: rgb(0, 1, 85);
 }
-.maincontainer{
+
+.maincontainer {
     background: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -68,7 +78,7 @@ body{
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.295);
 }
 
-.wasend{
+.wasend {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -78,70 +88,82 @@ body{
     border-radius: 10px;
     width: 90%;
 }
-.wasend .heading{
+
+.wasend .heading {
     margin-top: 5px;
     font-weight: 900;
     color: rgb(0, 153, 51);
 }
-.wasend .detail{
+
+.wasend .detail {
     margin-top: 5px;
     font-size: 10px;
 }
-hr{
+
+hr {
     width: 90%;
     height: 1px;
     background: rgb(231, 231, 231);
     border: none;
 }
-.bag{
+
+.bag {
     margin-top: 10px;
     margin-bottom: 20px;
     flex-direction: row;
     font-size: 12px;
 }
-.bag .year{
+
+.bag .year {
     flex: 1;
     margin-left: -10px;
     font-size: 11px;
-    font-weight:700 ;
+    font-weight: 700;
 }
-.bag .number1{
+
+.bag .number1 {
     font-size: 11px;
     flex: 1;
     font-weight: 600;
 
 }
-.bag .number2{
+
+.bag .number2 {
     margin-top: 5px;
     font-weight: 600;
     font-size: 11px;
     flex: 1;
 }
-.bag .number1 a{
+
+.bag .number1 a {
     text-decoration: none;
     color: rgb(79, 18, 194);
     font-size: 11px;
     font-weight: 600;
     -webkit-tap-highlight-color: transparent;
 }
-.bag .number2 a{
+
+.bag .number2 a {
     text-decoration: none;
     color: rgb(79, 18, 194);
     font-size: 11px;
     font-weight: 600;
     -webkit-tap-highlight-color: transparent;
 }
-.toscript{
+
+.toscript {
     margin-top: 0px;
     margin-bottom: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.toscript img{
+
+.toscript img {
     width: 40px;
 }
-.toscript .text{
+
+.toscript .text {
     font-size: 10px;
 }
 
@@ -150,9 +172,9 @@ hr{
 
 
 
-footer{
+footer {
     position: relative;
-    margin-top: 10px ;
+    margin-top: 10px;
     height: 100px;
     display: flex;
     background: rgb(29, 29, 29);
@@ -160,24 +182,27 @@ footer{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.295);
-    
+
 }
-footer .copyright{
+
+footer .copyright {
+    display: none;
     margin: auto;
     text-align: center;
     font-size: 10px;
 }
 
-footer .copyright a{
-    
+footer .copyright a {
+
     text-decoration: none;
     color: rgb(163, 130, 252);
 }
-footer .social{
+
+footer .social {
     margin: auto;
 }
 
-footer .social img{
+footer .social img {
     width: 20px;
     margin-top: 5px;
     margin-left: 10px;
