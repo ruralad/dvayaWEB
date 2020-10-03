@@ -62,7 +62,6 @@ main h2 {
     width: 100vw;
     height: 130vh;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .mountains {
@@ -190,7 +189,7 @@ main {
     width: 100vw;
     background: #ffffff;
     z-index: 2;
-    height: 300vh;
+    height: auto;
 }
 
 article {
@@ -208,6 +207,7 @@ article p {
 
 .eventlist {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -216,12 +216,16 @@ article p {
 .eventlist .box {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
     width: 50vw;
     height: 250px;
     background-color: #cecece63;
 
     border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .eventlist .box .write {
@@ -232,7 +236,7 @@ article p {
 }
 
 .eventlist .box .write h3 {
-    max-width: 60%;
+    max-width: 90%;
     color: #7168b5;
 }
 
@@ -247,4 +251,9 @@ article p {
     margin: 3%;
     height: auto;
     background-color: #cecece63;
+}
+
+.final {
+    position: relative;
+    max-width: 50%;
 }

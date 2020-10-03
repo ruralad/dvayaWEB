@@ -47,17 +47,21 @@ article {
   color: black;
   margin-bottom: 2%;
 }
+
 .helpdesk p {
   margin-bottom: 0.5%;
 }
+
 .helpdesk h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5%;
 }
+
 .helpdesk h2 span {
   font-size: 0.8rem;
   font-weight: lighter;
 }
+
 article .part {
   position: relative;
   text-align: left;
@@ -70,9 +74,11 @@ article .part h2 {
   font-size: 1.2rem;
   margin-bottom: 2%;
 }
+
 .helpdesk a {
   color: rgb(4, 145, 98);
 }
+
 article .part a {
   display: block;
   color: rgb(4, 145, 98);
@@ -97,4 +103,31 @@ article .part .nodec li {
 
 article .part p {
   color: black;
+}
+
+.notifications {
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imp,
+.not {
+  width: 30%;
+  border: 2px rgba(0, 0, 0, 0.103) solid;
+  border-radius: 3px;
+  height: 400px;
+  background-color: rgb(236, 236, 236);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imp p,
+.not p {
+  margin: 20px;
 }
