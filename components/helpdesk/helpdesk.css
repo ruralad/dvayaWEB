@@ -131,3 +131,21 @@ article .part p {
 .not p {
   margin: 20px;
 }
+
+@media(max-width : 600px) {
+  .not {
+    width: 80%;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  .helpdesk {
+    margin-bottom: 7%;
+  }
+
+  article .part {
+    margin-bottom: 7%;
+  }
+}

@@ -154,4 +154,28 @@ p {
         width: 100vw;
         margin-left: -35%;
     }
+
+    .box {
+        margin-top: 10%;
+    }
+
+    .box:last-child {
+        margin-bottom: 10%;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+
+    .box p {
+        font-size: .8rem;
+    }
+
+    .top {
+        font-size: .8rem;
+    }
+
+    section {
+        height: auto;
+    }
 }

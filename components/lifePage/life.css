@@ -263,3 +263,61 @@ article p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media(max-width:500px) {
+    main {
+        height: auto;
+    }
+
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+        max-width: 70vw;
+        color: #252525;
+    }
+
+    article h1 {
+        font-size: .9rem;
+    }
+
+    .eventlist .box {
+        align-items: center;
+        width: 90vw;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .eventlist .box .write h3 {
+        font-size: 1rem;
+    }
+
+    .eventlist .box .write p {
+        font-size: .8rem;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+
+    }
+
+    .eventlist .box .image {
+        height: 150px;
+    }
+
+    .grad {
+        text-align: left;
+        font-size: .7rem;
+        margin: 20px;
+    }
+}
