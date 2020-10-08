@@ -12,7 +12,7 @@ async function calls() {
                 response.json().then(function (data) {
                     for (let i = 0; i < data.latest.length; i++) {
                         let make = document.createElement('li');
-                        make.innerHTML = data.latest[i].date + ':' + data.latest[i].text;
+                        make.innerHTML = data.latest[i].text;
                         document.getElementById('calls').appendChild(make);
                     }
                 });

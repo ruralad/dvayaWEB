@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgb(224, 224, 224);
 }
 
 
@@ -54,14 +54,14 @@ body {
 
 #hero h1 {
     color: rgb(180, 0, 0);
-    font-family: 'Baloo Chettan 2', cursive;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 #hero p {
     width: 50%;
     text-align: center;
-    font-family: 'Baloo Chettan 2', cursive;
+    font-size: .9rem;
     color: white;
 }
 
@@ -73,26 +73,45 @@ body {
 #hero .sfiSubs a {
     padding: 20px;
     text-decoration: none;
-    font-family: 'Baloo Chettan 2', cursive;
     color: rgb(0, 213, 228);
 
 }
 
-.paragraphs p {
-
-    font-family: 'Baloo Chettan 2', cursive;
-}
 
 #about {
-    height: 100vh;
+    height: 200vh;
+    margin: 5%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+    justify-content: center;
 }
 
-#samskara {
-    height: 100vh;
+#about .aboutpara {
+    max-width: 100%;
 }
 
-#mathrukam {
+.programs {
+    margin-top: 30px;
+    max-width: 100%;
     height: 100vh;
+
+}
+
+.programs h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.programs p {
+    margin-bottom: 10px;
+}
+
+.programs p i {
+    font-weight: bold;
+    margin-bottom: 3px;
 }
 
 /* animations */
@@ -121,7 +140,6 @@ body {
     #hero .sfiSubs a {
         padding: 5px;
         font-size: 10px;
-        font-family: 'Baloo Chettan 2', cursive;
         display: block;
     }
 
@@ -132,6 +150,16 @@ body {
         width: 110%;
         margin-left: -10px;
         filter: brightness(31%);
+    }
+
+    #about h1 {
+        font-size: 15px;
+
+    }
+
+    #about {
+
+        font-size: 10px;
     }
 
 }
