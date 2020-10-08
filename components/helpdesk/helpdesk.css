@@ -20,6 +20,7 @@ html {
 
 body {
   background: rgb(243, 243, 243);
+  overflow-x: hidden;
 }
 
 .bg {
@@ -131,6 +132,10 @@ article .part p {
 .imp p,
 .not p {
   margin: 20px;
+}
+
+#calls li {
+  margin-left: 5px;
 }
 
 @media(max-width : 600px) {
