@@ -1,2 +1,3 @@
 # Dvaya✨
-unofficial website for GEC Idukki
+official website of SFI GECI Unit <br>
+[visit](https://dvaya.in)
