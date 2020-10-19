@@ -53,7 +53,7 @@ body {
 }
 
 #hero h1 {
-    color: rgb(180, 0, 0);
+    color: rgb(180, 0, 0);;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -118,7 +118,13 @@ body {
     background-color: rgba(255, 133, 117, 0.301);
     padding: 10px;
 }
-
+h4{
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size:1.5rem;
+  font-weight:normal;
+  margin-bottom:20px;
+  color:rgb(180, 0, 0);
+}
 
 /* animations */
 
