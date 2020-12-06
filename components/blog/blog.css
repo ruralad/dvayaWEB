@@ -1,0 +1,82 @@
+:root {
+    --nav-TextColor: rgb(56, 56, 56);
+    --nav-DropBG: rgb(245, 245, 245);
+    --nav-DropTextColor: rgb(44, 44, 44);
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: rgb(209, 200, 200);
+}
+h3{
+    margin-top:50px;
+}
+.lowerop{
+    opacity:.6;
+}
+.blogtitle{
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 1.2rem;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+    margin: 0px 10px;
+    }
+   .btn-twitter{
+     background-color:#5ae;
+   }
+   .btn-dribbble{
+     background-color:#e48;
+   }
+   .btn-facebook{
+     background-color:#369
+   }
+   
+   .card {
+     position:relative;
+     display: block;
+     margin-bottom: 0.75rem;
+     background-color: #fff;
+     border-radius: 0.25rem;
+     border: 1px solid rgba(0, 0, 0, 0.125);
+   }
+   
+   .card-block {
+     padding:1.25rem;
+     height:auto;
+  font-family: 'Baloo Chettan 2', cursive;
+  overflow:hidden;
+   }
+   
+   .card-block::after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   
+   .card-title {
+     margin-bottom: 0.75rem;
+     margin-top:0.75rem;
+   }
+   .card-text:last-child {
+     margin-bottom: 0;
+   }
+   .card-img {
+     border-top-right-radius: 0.25rem;
+     border-top-left-radius: 0.25rem;
+     max-width:100%;
+   }
+   a, .fa-heart-o{
+     color:#29f;
+   }
+   
+   

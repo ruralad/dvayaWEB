@@ -24,20 +24,40 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 85vh;
 }
 
 main h1 {
+    margin-top: 50px;
     text-align: center;
-    font-size: .9rem;
+    font-size: 2rem;
 }
-
-main h1::after {
-    display: block;
-    content: '( closed until college re-opens )';
-    font-size: .6rem;
-    color: rgba(127, 255, 212, 0.541);
-    margin-top: 5px;
+main p{
+    margin-bottom: 50px;
+    font-size: .8rem;
+}
+section{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+section ul{
+    padding:10px;
+}
+section ul li{
+    color: white;
+    list-style: none;
+    font-size:1.1rem;
+    margin-bottom: 15px;
+}
+section ul li span{
+    opacity:.5;
+    font-size:.9rem;
+}
+section ul li a{
+    text-decoration: none;
+    color: teal;
+    margin-left: 25px;
 }

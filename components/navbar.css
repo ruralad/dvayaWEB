@@ -37,32 +37,11 @@ html {
   top: 10px;
   right: 10px;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
 }
-
-#rightNav a {
-  text-decoration: none;
-}
-
-#freshersButton {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--nav-TextColor);
-  border: 2px solid var(--nav-TextColor);
-  border-radius: 3px;
-  padding: 3px;
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-#freshersButton:hover {
-  box-shadow: 0px 0px 10px rgb(190, 190, 190);
-  transition: all 0.3s;
-}
-
 #menuBurger {
   margin-top: 3px;
-  cursor: pointer;
 }
 
 .hamburger {
@@ -138,6 +117,7 @@ html {
   color: var(--nav-DropTextColor);
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
 }
 
 #dropdown ul li.heading {
@@ -165,13 +145,6 @@ html {
 .bottomOfNav1 a {
   display: inline-block;
 }
-
-.bottomOfNav2 a::after {
-  content: " (closed)";
-  font-weight: 300;
-  font-size: 10px;
-}
-
 footer p {
   text-align: center;
   font-size: .8rem;
