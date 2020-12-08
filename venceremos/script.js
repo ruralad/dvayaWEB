@@ -12,4 +12,7 @@ function addResults(results){
     document.querySelector(".lastupdate").innerHTML= " Last Updated On " + results.lastUpdated; 
     document.querySelector(".total-events").innerHTML= " Total Events : 24 <br/> Results Announced : " + results.total ; 
 
+    document.querySelector("main").style.display = "flex";
+    document.querySelector(".loading").style.display = "none";
+
 }
