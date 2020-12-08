@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venceremos Live Standings | Dvaya | Sfi Geci</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./venceremos/style.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+
+</head>
+
+<body>
+    <!-- navbar, linked to navbar.css,navApp.js -->
+    <div id="navBar">
+        <div id="dvayaBox">
+            <img src="./assets/dvayaLogo.png" alt="">
+            <span>DVAYA <br> Portal To Geci</br></span>
+        </div>
+        <div id="rightNav">
+            <div class="hamburger" id="menuBurger" onclick="showDropdown()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="dropdown" class="rectangleDrop">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./communities.html">Communities</a></li>
+                        <li><a href="./lifeatgeci.html">Life At Geci</a></li>
+                        <li class="sfi"><a href="./sfi.html">Sfi Geci</a></li>
+                        <li class="seperatingLineNav"></li>
+                        <li class="bottomOfNav1">
+                          <a href="./blog.html">Blog</a>
+                        </li>
+                        <li class="bottomOfNav2">
+                          <a href="./antiraggingcell.html">Anti-Ragging Cell</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar end -->
+    <main>
+        <h1>Venceremos Live Standings</h1>
+        <section class="table">
+            <ul id="standingsTable">
+            </ul>
+        </section>
+        <p class="total-events"></p>
+        <p class="lastupdate"></p>
+    </main>
+    <!-- scripts -->
+    <script src="./venceremos/script.js"></script>
+    <script src="./components/navApp.js"></script>
+</body>
+
+</html>
