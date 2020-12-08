@@ -1,4 +1,4 @@
-fetch("https://cors-anywhere.herokuapp.com/https://dvaya-blogapi.glitch.me/api/venceremoseventresults.json")
+fetch("https://cors-anywhere.herokuapp.com/https://dvayablog.herokuapp.com/api/venceremoseventresults.json")
 .then(response => response.json())
 .then(data => addResults(data));
 
