@@ -2,7 +2,6 @@ fetch("https://dvaya-blogapi.glitch.me/api/vencstandings",{
     method : "get",
     mode: "no-cors"
 })
-.then(response => response.json())
 .then(data => addResults(data));
 
 function addResults(results){
