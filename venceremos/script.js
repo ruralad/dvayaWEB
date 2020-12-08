@@ -1,5 +1,6 @@
-fetch("https://dvaya-blogapi.glitch.me/api/venceremoslive.json",{
-    mode: 'no-cors'
+fetch("https://dvaya-blogapi.glitch.me/api/vencstandings",{
+    method : "get",
+    mode: "no-cors"
 })
 .then(response => response.json())
 .then(data => addResults(data));
