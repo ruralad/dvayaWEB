@@ -1,4 +1,4 @@
-fetch("https://dvaya-blogapi.glitch.me/api/venceremoslive.json")
+fetch("https://dvayablog.herokuapp.com/api/venceremoslive.json")
 .then(response => response.json())
 .then(data => addResults(data));
 
