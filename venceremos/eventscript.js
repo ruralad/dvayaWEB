@@ -1,9 +1,11 @@
-fetch("https://cors-anywhere.herokuapp.com/https://dvayablog.herokuapp.com/api/venceremoseventresults.json")
+fetch("https://dvayablog.herokuapp.com/api/vencresults",{
+    method : "get",
+    mode: "cors"
+})
 .then(response => response.json())
 .then(data => addResults(data));
 
 function addResults(results){
-    console.log(results);
     let i =0;
     for(i=0;i<results.length;i++){
         let newresult = document.createElement("div");

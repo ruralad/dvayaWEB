@@ -1,9 +1,9 @@
-fetch("https://dvaya-blogapi.glitch.me/api/vencstandings",{
+fetch("https://dvayablog.herokuapp.com/api/vencstandings",{
     method : "get",
-    mode: "no-cors"
+    mode: "cors"
 })
 .then(response => response.json())
-.then(data => console.log(data));
+.then(data => addResults(data));
 
 function addResults(results){
 
