@@ -37,12 +37,12 @@ function addResults(results){
         let p2 = document.createElement("p");
         p2.innerHTML = results[i].second.name + '<span>(' + results[i].second.dept +')</span>';
         li2.appendChild(p2);
-        if(results[i].first2.name != ""){
+        if(results[i].second2.name != ""){
             let p2 = document.createElement("p");
             p2.innerHTML = results[i].second2.name + '<span>(' + results[i].second2.dept +')</span>';
             li2.appendChild(p2);
         }
-        if(results[i].first3.name != ""){
+        if(results[i].second3.name != ""){
             let p2 = document.createElement("p");
             p2.innerHTML = results[i].second3.name + '<span>(' + results[i].second3.dept +')</span>';
             li2.appendChild(p2);
@@ -52,12 +52,12 @@ function addResults(results){
         let p3 = document.createElement("p");
         p3.innerHTML = results[i].third.name + '<span>(' + results[i].third.dept +')</span>';
         li3.appendChild(p3);
-        if(results[i].first2.name != ""){
+        if(results[i].third2.name != ""){
             let p2 = document.createElement("p");
             p2.innerHTML = results[i].third2.name + '<span>(' + results[i].third2.dept +')</span>';
             li3.appendChild(p2);
         }
-        if(results[i].first3.name != ""){
+        if(results[i].third3.name != ""){
             let p2 = document.createElement("p");
             p2.innerHTML = results[i].third3.name + '<span>(' + results[i].third3.dept +')</span>';
             li3.appendChild(p2);
