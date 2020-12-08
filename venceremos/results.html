@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venceremos Live Standings | Dvaya | Sfi Geci</title>
-
+    <title>Venceremos Event Results | Dvaya | Sfi Geci</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="./venceremos/style.css">
-    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../components/navbar.css">
 
 </head>
 
@@ -19,7 +18,7 @@
     <!-- navbar, linked to navbar.css,navApp.js -->
     <div id="navBar">
         <div id="dvayaBox">
-            <img src="./assets/dvayaLogo.png" alt="">
+            <img src="../assets/dvayaLogo.png" alt="">
             <span>DVAYA <br> Portal To Geci</br></span>
         </div>
         <div id="rightNav">
@@ -49,20 +48,37 @@
     <!-- navbar end -->
     <div class="loading">
         <div class="circle"></div>
-       </div> 
+    </div> 
     <main>
-        <h1>Venceremos Live Standings</h1>
-        <section class="table">
-            <ul id="standingsTable">
-            </ul>
-        </section>
-        <a href="/venceremos/results.html">See Individual Events' Results</a>
+        <h1>Venceremos Event Results</h1>
+        <div class="all-results">
+            <!-- <div class="result">
+                <h5>EventName</h5>
+                <ul>
+                    <li>
+                        First
+                        <p>Name<span>(Department)</span></p>
+                    </li>
+                    <li>
+                        Second
+                        <p>Name<span>(Department)</span></p>
+
+                    </li>
+                    <li>
+                        Third
+                        <p>Name<span>(Department)</span></p>
+
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <a href="../venceremoslive.html">See Live Standings</a>
         <p class="total-events"></p>
         <p class="lastupdate"></p>
     </main>
     <!-- scripts -->
-    <script src="./venceremos/script.js"></script>
-    <script src="./components/navApp.js"></script>
+    <script src="eventscript.js" defer></script>
+    <script src="../components/navApp.js"></script>
 </body>
 
 </html>
