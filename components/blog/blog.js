@@ -1,4 +1,4 @@
-fetch("https://dvayablog.herokuapp.com/api/blogs.json")
+fetch("https://cors-anywhere.herokuapp.com/https://dvayablog.herokuapp.com/api/blogs.json")
 .then(response => response.json())
 .then(data => addBlogs(data));
 
