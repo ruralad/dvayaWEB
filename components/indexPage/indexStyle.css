@@ -11,7 +11,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 html {
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -95,4 +97,13 @@ footer div p{
     main p {
         font-size: .8rem;
     }
+}
+.venceremos{
+    color: white;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+.venceremos p{
+    padding:5px;
 }
