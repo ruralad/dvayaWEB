@@ -5,8 +5,8 @@ fetch("https://dvayablog.herokuapp.com/api/vencstandings",{
 .then(response => response.json())
 .then(data => addResults(data));
 
-function addResults(results){
-
+function addResults(data){
+    let results=data[0];
     let current = 4;
     for(current;current>=0;current--) {
         document.querySelector("#standingsTable").innerHTML = 

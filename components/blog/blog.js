@@ -1,10 +1,13 @@
-fetch("https://cors-anywhere.herokuapp.com/https://dvayablog.herokuapp.com/api/blogs.json")
+fetch("https://dvayablog.herokuapp.com/api/allblogs",{
+    method : "get",
+    mode: "cors"
+})
 .then(response => response.json())
 .then(data => addBlogs(data));
 
 function addBlogs(blogs){
 
-    document.querySelector("#lastupdated").innerText = blogs[0].date;
+    document.querySelector("#lastupdated").innerText = "last updated on " + blogs[0].createdAt.slice(0,10);
     document.querySelector(".loading").style.display = "none";
 
     let i=0;
@@ -26,7 +29,7 @@ function addBlogs(blogs){
         p1.innerText = blogs[i].author;
         let p2 = document.createElement("p");
         p2.classList.add("date");
-        p2.innerText = blogs[i].date;
+        p2.innerText = blogs[i].createdAt.slice(0,10);
         let p3 = document.createElement("p");
         p3.classList.add("card-text");
         p3.innerText = blogs[i].text;
