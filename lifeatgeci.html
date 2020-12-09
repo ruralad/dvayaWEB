@@ -11,6 +11,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./components/lifePage/life.css">
+    <link rel="stylesheet" href="./components/lifePage/events.css">
+    <link rel="stylesheet" href="./components/lifePage/communities.css">
+
     <link rel="stylesheet" href="./components/navbar.css">
 
 </head>
@@ -31,7 +34,6 @@
                 <div id="dropdown" class="rectangleDrop">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
-              <li><a href="./communities.html">Communities</a></li>
               <li><a href="./lifeatgeci.html">Life At Geci</a></li>
               <li class="sfi"><a href="./sfi.html">Sfi Geci</a></li>
               <li class="seperatingLineNav"></li>
@@ -88,8 +90,15 @@
             </div>
         </div>
         <main>
-            <article>
-                <h1>some of the events conducted at the college</h1>
+            <div id="select">
+                <div class="select-box" onclick="dshow('article')">
+                    <span>Events</span>
+                </div>
+                <div class="select-box" onclick="dshow('section')">
+                    <span >Communities</span>
+                </div>
+            </div>
+            <article id = "eventsconducted">
                 <div class="eventlist">
                     <div class="box">
                         <div class="write">
@@ -158,7 +167,77 @@
                     also conducts dozens of other programs every year, from special programs for first years to
                     valentines day programs, you will always have something to enjoy in the college.</p>
 
-            </article>
+            </article> 
+
+            <section id="toCommunity">
+                <div id="communitiesGroup">
+                    <div class="box">
+                        <h2>IEEE</h2>
+                        <p>IEEE and its members inspire a global community to innovate for a better tomorrow through highly
+                            cited publications, conferences, technology standards, and professional and educational
+                            activities. IEEE is the trusted “voice” for engineering, computing, and technology information
+                            around the globe.</p>
+                        <div class="top">Akarsh <a href="tel:+91 99955 29772">99955 29772</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>HRD Cell</h2>
+                        <p>Human Resource Development Centre is a support service, volunteered by the faculty of the college
+                            to help the students in their personal, social, emotional, educational and career development.
+                        </p>
+                        <div class="top">Alfred <a href="tel:+91 83019 74352">83019 74352</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Trex Dance Club</h2>
+                        <p>Step up your moves with the GECI dance club</p>
+                        <div class="top">Aromal <a href="tel:+91 97449 99086">97449 99086</a></div>
+                    </div>
+    
+                    <div class="box">
+                        <h2>NSS</h2>
+                        <p>National Service Scheme (NSS) helps the students development & appreciation to other person's
+                            point of view and also show consideration towards other living beings.</p>
+                        <div class="top">Alan <a href="tel:+91 86063 02214">86063 02214</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>FOSS Cell</h2>
+                        <p>Free and open-source software (FOSS) cell at GECI, is a community of passionate students and
+                            faculties, who have come together for the cause of promoting and contributing to Free and Open
+                            Source Software. </p>
+                        <div class="top">Sujith <a href="tel:+91 92077 73141">92077 73141</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Technoship Cell</h2>
+                        <p>The technical division of HRD Cell, Technoship cell aims to train GECIand with the latest
+                            technologies out there and encourage to develop innovative ideas for the society.</p>
+                        <div class="top">Vishnu Suresh <a href="tel:+91 90740 61885"> 90740 61885</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Women Cell</h2>
+                        <p>The Women Cell is constituted to help maintain a harmonious atmosphere at the institute, to
+                            enable women to pursue their work with dignity and reassurance.</p>
+                        <div class="top">Hiba <a href="tel:+91 96057 34232">96057 34232</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Querencia</h2>
+                        <p>The drawing club of GECI, Querencia is a place where the artists of GECI get together and share
+                            their works, ideas etc. We are the ones who gives GECI its voice.</p>
+                        <div class="top">Gowriparvathy <a href="tel:+91 91884 37863">91884 37863</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Robovation</h2>
+                        <p>Place where you can thin, innovate and build futuristic technologies.</p>
+                        <div class="top">Azhar <a href="tel:+91 94468 94116">94468 94116</a></div>
+                    </div>
+                    <div class="box">
+                        <h2>Obscura</h2>
+                        <p>The GECI Photography Club, we try to take the most beautiful pictures from the most beautiful
+                            place on earth, Idukki.</p>
+                        <div class="top">Smijila <a href="tel:+91 97459 13887">97459 13887</a></div>
+                    </div>
+    
+                </div>
+            </section>
+
             <footer>
                 <p>© All Rights Reserved By SFI GECI. <br> Want to report an error? Click <a style="color: black;"
                         href="mailto:sfigecidukkiunit@gmail.com">here</a></p>

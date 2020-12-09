@@ -149,6 +149,7 @@ footer p {
   text-align: center;
   font-size: .8rem;
   color: rgb(148, 148, 148);
+  margin-top: 20px;
 }
 
 @keyframes showDropdown {

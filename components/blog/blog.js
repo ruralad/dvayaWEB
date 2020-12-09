@@ -7,11 +7,10 @@ fetch("https://dvayablog.herokuapp.com/api/allblogs",{
 
 function addBlogs(blogs){
 
-    document.querySelector("#lastupdated").innerText = "last updated on " + blogs[0].createdAt.slice(0,10);
     document.querySelector(".loading").style.display = "none";
 
-    let i=0;
-    for(i;i<blogs.length;i++){
+    let i=blogs.length-1;
+    for(i;i>=0;i++){
         let col4 = document.createElement("div");
         col4.classList.add("col-4");
         let card = document.createElement("div");
