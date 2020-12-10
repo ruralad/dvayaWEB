@@ -18,7 +18,7 @@ html {
   color: var(--nav-TextColor);
   left: 10px;
   top: 5px;
-
+  z-index: 99;
 }
 
 #dvayaBox img {

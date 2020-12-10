@@ -2,6 +2,9 @@ let dropDown = document.getElementById("dropdown");
 let menuBurger = document.getElementById("menuBurger");
 let menuBurgerOpen = false;
 
+document.getElementById("dvayaBox").addEventListener("click", function(){
+    window.location = "https://dvaya.in";
+});
 function showDropdown() {
 
     if (!menuBurgerOpen) {
@@ -25,9 +28,8 @@ function change_favicon(img) {
         head.appendChild(favicon);
     }
 
-
-    favicon.setAttribute('type', 'image/png');
-    favicon.setAttribute('href', '../assets/dvayaLogo.png');
+    favicon.setAttribute('type', 'image/webp');
+    favicon.setAttribute('href', '../assets/dvayaLogo.webp');
 }
 
 change_favicon();
