@@ -6,8 +6,9 @@ fetch("https://dvayablog.herokuapp.com/api/vencresults",{
 .then(data => addResults(data));
 
 function addResults(results){
-    let i =0;
-    for(i=0;i<results.length;i++){
+    let i;
+    console.log(results)
+    for(i=results.length-1;i>=0;i--){
         let newresult = document.createElement("div");
         newresult.classList.add("result");
 
@@ -70,7 +71,7 @@ function addResults(results){
         document.querySelector(".all-results").appendChild(newresult);
     }
     
-    document.querySelector(".lastupdate").innerHTML= " Last Updated On " + results[0].lastUpdated; 
+    document.querySelector(".lastupdate").innerHTML= " Last Updated On " + results[results.length-1].lastUpdated; 
     document.querySelector("main").style.display = "flex";
     document.querySelector(".loading").style.display = "none";
     
