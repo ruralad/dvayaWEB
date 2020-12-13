@@ -24,30 +24,37 @@
     <!-- navbar, linked to navbar.css,navApp.js -->
     <div id="navBar">
       <div id="dvayaBox">
-        <img src="./assets/dvayaLogo.webp" alt="dvayaLogo">
+        <img src="./assets/dvayaLogo.webp" alt="dvayaLogo" />
         <span
           >DVAYA <br />
           Portal To Geci</span
         >
       </div>
       <div id="rightNav">
-        <div class="hamburger" id="menuBurger" onclick="showDropdown()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <div id="dropdown" class="rectangleDrop">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown" />
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./lifeatgeci.html">Life At Geci</a></li>
               <li class="sfi"><a href="./sfi.html">Sfi Geci</a></li>
-              <li class="seperatingLineNav"></li>
-              <li class="bottomOfNav1">
+              <li class="sfi">
+                <a href="./studymaterials/firstyear.html">Study Materials</a>
+              </li>
+              <li>
                 <a href="./blog.html">Blog</a>
               </li>
-              <li class="bottomOfNav2">
+              <li>
                 <a href="./antiraggingcell.html">Anti-Ragging Cell</a>
               </li>
             </ul>
+            <div class="bottom">
+              <img onclick="goTo('sfi-insta')" src="./assets/instagram.svg" />
+              <img onclick="goTo('sfi-fb')" src="./assets/facebook.svg" />
+              <p>Dvaya, from Sfi Geci</p>
+            </div>
           </div>
         </div>
       </div>
@@ -56,31 +63,24 @@
 
     <div id="hero">
       <img src="./assets/sfi.webp" alt="sfiProtestImage" class="sfiFront" />
-      <h1>Red has many meanings... <br>
-Youth can make it more</h1>
-      <p>
-        We believe that along with creating the best engineers in the country,
-        <br />
-        GECI should be also moulding the best personalities for the society.
-        <br />
-        
-      </p>
+      <h1>
+        Red has many meanings<br />
+        Youth can make it have more
+      </h1>
       <div class="sfiSubs">
         <a href="#about">what we do</a>
       </div>
     </div>
     <div class="paragraphs">
       <div id="about">
-        <p class="aboutpara">
-          <h4 > 
-            ഉയരുക മുഷ്ടികൾ ഉയരട്ടിനിയും... 
-ചോര തുടിക്കും കയ്യുകളാൽ...
-        </h4>
-         SFI GECI has been winning the college elections continously since 2011.
-        That tells you how much the organisation have been helping the students
-        to have their best experience in college. We ensures a ragging-free
-        college, and we'll do everything we can to make sure that no
-        student in the campus is denied their basic rights.
+        <p class="aboutpara"></p>
+        <h4>ഉയരുക മുഷ്ടികൾ ഉയരട്ടിനിയും... ചോര തുടിക്കും കയ്യുകളാൽ...</h4>
+        <p>
+          SFI GECI has been winning the college elections continously since
+          2011. That tells you how much the organisation have been helping the
+          students to have their best experience in college. We ensures a
+          ragging-free college, and we'll do everything we can to make sure that
+          no student in the campus is denied their basic rights.
         </p>
         <div class="programs">
           <h1>Some Of Our Active Programs</h1>
@@ -114,144 +114,194 @@ Youth can make it more</h1>
             provide a full course meal to the patients and bystanders at the
             Idukki Government Medical College
           </p>
-          
+
           <div class="unit">
             <h4>
-              When the society is silent,
-It is our duty to raise our voices.
+              When the society is silent, It is our duty to raise our voices.
             </h4>
             <div class="contents">
               <h1>SFI GECI UNIT 2019-2020</h1>
-                        <b>Secretary</b> <br>
-                        Avinash K C<br>
-                        S7 EEE<br>
-                        80897 46125<br><br>
+              <b>Secretary</b> <br />
+              Avinash K C<br />
+              S7 EEE<br />
+              80897 46125<br /><br />
 
-                        <b>President</b> <br>
-                        Sachin Saburaj<br>
-                        S7 ME<br>
-                        94962 60961<br><br>
+              <b>President</b> <br />
+              Sachin Saburaj<br />
+              S7 ME<br />
+              94962 60961<br /><br />
 
+              <b>Joint Secretary</b> <br />
+              Abhijith T Sunil<br />
+              S5 CS<br />
+              95629 33995<br /><br />
 
-                        <b>Joint Secretary</b> <br>
-                        Abhijith T Sunil<br>
-                        S5 CS<br>
-                        95629 33995<br><br>
+              <b>Joint Secretary</b> <br />
+              AthulRaj K<br />
+              S7 ME<br />
+              90612 01456<br /><br />
 
-                        <b>Joint Secretary</b> <br>
-                        AthulRaj K<br>
-                        S7 ME<br>
-                        90612 01456<br><br>
+              <b>Joint Secretary</b><br />
+              Amarnath P<br />
+              S5 ME<br />
+              81369 56586<br /><br />
 
+              <b>Vice President</b><br />
+              Abhijith K<br />
+              S7 CSE<br />
+              95267 27913<br /><br />
 
-                        <b>Joint Secretary</b><br>
-                        Amarnath P<br>
-                        S5 ME<br>
-                        81369 56586<br><br>
+              <b>Vice president</b><br />
+              Devika Sreekumar<br />
+              S7 ECE<br />
+              82816 59738<br /><br />
 
-                        <b>Vice President</b><br>
-                        Abhijith K<br>
-                        S7 CSE<br>
-                        95267 27913<br><br>
+              <b>Vice president</b><br />
+              Aravind Babu P<br />
+              S7 ME<br />
+              85475 27914<br /><br />
 
+              Adarsh Murali P <br />
+              S7 CS<br />
+              95673 71256<br /><br />
 
-                        <b>Vice president</b><br>
-                        Devika Sreekumar<br>
-                        S7 ECE<br>
-                        82816 59738<br><br>
+              Akhil C Das<br />
+              S7 ME<br />
+              8547527914<br /><br />
 
-                        <b>Vice president</b><br>
-                        Aravind Babu P<br>
-                        S7 ME<br>
-                        85475 27914<br><br>
+              Adithya B Anil<br />
+              S7 IT<br />
+              94469 09673<br /><br />
 
-                        Adarsh Murali P <br>
-                        S7 CS<br>
-                        95673 71256<br><br>
+              Agrima P T<br />
+              S5 CSE<br />
+              97450 74043<br /><br />
 
-                        Akhil C Das<br>
-                        S7 ME<br>
-                        8547527914<br><br>
+              Sreerag V K<br />
+              S5 ME<br />
+              94964 54399<br /><br />
 
-                        Adithya B Anil<br>
-                        S7 IT<br>
-                        94469 09673<br><br>
+              Akshay V P<br />
+              S7 CS<br />
+              97472 82024<br /><br />
 
-                        Agrima P T<br>
-                        S5 CSE<br>
-                        97450 74043<br><br>
+              Anju A<br />
+              S5 CS<br />
+              70256 08498<br /><br />
 
-                        Sreerag V K<br>
-                        S5 ME<br>
-                        94964 54399<br><br>
+              Jinsha Backer<br />
+              S7 IT<br />
+              83049 09689<br /><br />
 
-                        Akshay V P<br>
-                        S7 CS<br>
-                        97472 82024<br><br>
+              Nihal S J<br />
+              S3 ME<br />
+              81380 94784<br /><br />
 
-                        Anju A<br>
-                        S5 CS<br>
-                        70256 08498<br><br>
+              Adithya Ramesan<br />
+              S3 EEE<br />
+              94975 25143<br /><br />
 
-                        Jinsha Backer<br>
-                        S7 IT<br>
-                        83049 09689<br><br>
+              Vaisakhan ML<br />
+              S5 CS <br />
+              95675 68357<br /><br />
 
-                        Nihal S J<br>
-                        S3 ME<br>
-                        81380 94784<br><br>
+              Arun S R<br />
+              S5 EC<br />
+              92074 74490<br /><br />
 
-                        Adithya Ramesan<br>
-                        S3 EEE<br>
-                        94975 25143<br><br>
-
-                        Vaisakhan ML<br>
-                        S5 CS <br>
-                        95675 68357<br><br>
-                        
-                        Arun S R<br>
-                        S5 EC<br>
-                        92074 74490<br><br>
-
-                        Faisal S <br>
-                        M3 EC<br>
-                        99474 33842<br><br>
-                    </div>
+              Faisal S <br />
+              M3 EC<br />
+              99474 33842<br /><br />
+            </div>
           </div>
         </div>
         <div class="social">
           <blockquote
-            class=" instagram-media"
+            class="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/p/B1_n91_nbLC/?utm_source=ig_embed&amp;utm_campaign=loading"
             data-instgrm-version="12"
-            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+            style="
+              background: #fff;
+              border: 0;
+              border-radius: 3px;
+              box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                0 1px 10px 0 rgba(0, 0, 0, 0.15);
+              margin: 1px;
+              max-width: 540px;
+              min-width: 326px;
+              padding: 0;
+              width: 99.375%;
+              width: -webkit-calc(100% - 2px);
+              width: calc(100% - 2px);
+            "
           >
-            <div style="padding:16px;">
+            <div style="padding: 16px">
               <a
                 href="https://www.instagram.com/p/B1_n91_nbLC/?utm_source=ig_embed&amp;utm_campaign=loading"
-                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                style="
+                  background: #ffffff;
+                  line-height: 0;
+                  padding: 0 0;
+                  text-align: center;
+                  text-decoration: none;
+                  width: 100%;
+                "
                 target="_blank"
               >
                 <div
-                  style=" display: flex; flex-direction: row; align-items: center;"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                  "
                 >
                   <div
-                    style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      flex-grow: 0;
+                      height: 40px;
+                      margin-right: 14px;
+                      width: 40px;
+                    "
                   ></div>
                   <div
-                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                      justify-content: center;
+                    "
                   >
                     <div
-                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        margin-bottom: 6px;
+                        width: 100px;
+                      "
                     ></div>
                     <div
-                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        width: 60px;
+                      "
                     ></div>
                   </div>
                 </div>
-                <div style="padding: 19% 0;"></div>
+                <div style="padding: 19% 0"></div>
                 <div
-                  style="display:block; height:50px; margin:0 auto 12px; width:50px;"
+                  style="
+                    display: block;
+                    height: 50px;
+                    margin: 0 auto 12px;
+                    width: 50px;
+                  "
                 >
                   <svg
                     width="50px"
@@ -280,71 +330,178 @@ It is our duty to raise our voices.
                     </g>
                   </svg>
                 </div>
-                <div style="padding-top: 8px;">
+                <div style="padding-top: 8px">
                   <div
-                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"
+                    style="
+                      color: #3897f0;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 550;
+                      line-height: 18px;
+                    "
                   >
                     View this post on Instagram
                   </div>
                 </div>
-                <div style="padding: 12.5% 0;"></div>
+                <div style="padding: 12.5% 0"></div>
                 <div
-                  style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 14px;
+                    align-items: center;
+                  "
                 >
                   <div>
                     <div
-                      style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        height: 12.5px;
+                        width: 12.5px;
+                        transform: translateX(0px) translateY(7px);
+                      "
                     ></div>
                     <div
-                      style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"
+                      style="
+                        background-color: #f4f4f4;
+                        height: 12.5px;
+                        transform: rotate(-45deg) translateX(3px)
+                          translateY(1px);
+                        width: 12.5px;
+                        flex-grow: 0;
+                        margin-right: 14px;
+                        margin-left: 2px;
+                      "
                     ></div>
                     <div
-                      style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        height: 12.5px;
+                        width: 12.5px;
+                        transform: translateX(9px) translateY(-18px);
+                      "
                     ></div>
                   </div>
-                  <div style="margin-left: 8px;">
+                  <div style="margin-left: 8px">
                     <div
-                      style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        flex-grow: 0;
+                        height: 20px;
+                        width: 20px;
+                      "
                     ></div>
                     <div
-                      style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"
+                      style="
+                        width: 0;
+                        height: 0;
+                        border-top: 2px solid transparent;
+                        border-left: 6px solid #f4f4f4;
+                        border-bottom: 2px solid transparent;
+                        transform: translateX(16px) translateY(-4px)
+                          rotate(30deg);
+                      "
                     ></div>
                   </div>
-                  <div style="margin-left: auto;">
+                  <div style="margin-left: auto">
                     <div
-                      style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"
+                      style="
+                        width: 0px;
+                        border-top: 8px solid #f4f4f4;
+                        border-right: 8px solid transparent;
+                        transform: translateY(16px);
+                      "
                     ></div>
                     <div
-                      style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"
+                      style="
+                        background-color: #f4f4f4;
+                        flex-grow: 0;
+                        height: 12px;
+                        width: 16px;
+                        transform: translateY(-4px);
+                      "
                     ></div>
                     <div
-                      style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"
+                      style="
+                        width: 0;
+                        height: 0;
+                        border-top: 8px solid #f4f4f4;
+                        border-left: 8px solid transparent;
+                        transform: translateY(-4px) translateX(8px);
+                      "
                     ></div>
                   </div>
                 </div>
                 <div
-                  style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                    margin-bottom: 24px;
+                  "
                 >
                   <div
-                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      margin-bottom: 6px;
+                      width: 224px;
+                    "
                   ></div>
                   <div
-                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      width: 144px;
+                    "
                   ></div>
                 </div>
               </a>
               <p
-                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"
+                style="
+                  color: #c9c8cd;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  line-height: 17px;
+                  margin-bottom: 0;
+                  margin-top: 8px;
+                  overflow: hidden;
+                  padding: 8px 0 7px;
+                  text-align: center;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                "
               >
                 <a
                   href="https://www.instagram.com/p/B1_n91_nbLC/?utm_source=ig_embed&amp;utm_campaign=loading"
-                  style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                  style="
+                    color: #c9c8cd;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 17px;
+                    text-decoration: none;
+                  "
                   target="_blank"
                   >A post shared by SFI GECI UNIT (@sfigeci)</a
                 >
                 on
                 <time
-                  style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
+                  style="
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    line-height: 17px;
+                  "
                   datetime="2019-09-04T15:21:31+00:00"
                   >Sep 4, 2019 at 8:21am PDT</time
                 >
@@ -357,13 +514,7 @@ It is our duty to raise our voices.
       </div>
     </div>
     <footer>
-      <p>
-        © All Rights Reserved By SFI GECI. <br />
-        Want to report an error? Click
-        <a style="color: black;" href="mailto:sfigecidukkiunit@gmail.com"
-          >here</a
-        >
-      </p>
+      <p>© Dvaya by SFI GECI</p>
     </footer>
     <!-- scripts -->
     <script src="./components/sfiPage/sfiApp.js"></script>

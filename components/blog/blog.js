@@ -1,46 +1,45 @@
-fetch("https://dvayablog.herokuapp.com/api/allblogs",{
-    method : "get",
-    mode: "cors"
+fetch("https://dvayablog.herokuapp.com/api/allblogs", {
+  method: "get",
+  mode: "cors",
 })
-.then(response => response.json())
-.then(data => addBlogs(data));
+  .then((response) => response.json())
+  .then((data) => addBlogs(data));
 
-function addBlogs(blogs){
+function addBlogs(blogs) {
+  document.querySelector(".loading").style.display = "none";
 
-    document.querySelector(".loading").style.display = "none";
+  let i = blogs.length - 1;
+  for (i; i >= 0; i--) {
+    let col4 = document.createElement("div");
+    col4.classList.add("col-4");
+    let card = document.createElement("div");
+    card.classList.add("card");
+    let cardBlock = document.createElement("div");
+    cardBlock.classList.add("card-block");
 
-    let i=blogs.length-1;
-    for(i;i>=0;i++){
-        let col4 = document.createElement("div");
-        col4.classList.add("col-4");
-        let card = document.createElement("div");
-        card.classList.add("card");
-        let cardBlock = document.createElement("div");
-        cardBlock.classList.add("card-block");
+    let h3 = document.createElement("h3");
+    h3.classList.add("card-title");
+    h3.classList.add("blogtitle");
+    h3.innerText = blogs[i].title;
 
-        let h3 = document.createElement("h3");
-        h3.classList.add("card-title");
-        h3.classList.add("blogtitle");
-        h3.innerText = blogs[i].title;
+    let p1 = document.createElement("p");
+    p1.classList.add("author");
+    p1.innerText = blogs[i].author;
+    let p2 = document.createElement("p");
+    p2.classList.add("date");
+    p2.innerText = blogs[i].createdAt.slice(0, 10);
+    let p3 = document.createElement("p");
+    p3.classList.add("card-text");
+    p3.innerText = blogs[i].text;
 
-        let p1 = document.createElement("p");
-        p1.classList.add("author");
-        p1.innerText = blogs[i].author;
-        let p2 = document.createElement("p");
-        p2.classList.add("date");
-        p2.innerText = blogs[i].createdAt.slice(0,10);
-        let p3 = document.createElement("p");
-        p3.classList.add("card-text");
-        p3.innerText = blogs[i].text;
+    cardBlock.appendChild(h3);
+    cardBlock.appendChild(p1);
+    cardBlock.appendChild(p2);
+    cardBlock.appendChild(p3);
 
-        cardBlock.appendChild(h3);
-        cardBlock.appendChild(p1);
-        cardBlock.appendChild(p2);
-        cardBlock.appendChild(p3);
+    card.appendChild(cardBlock);
+    col4.appendChild(card);
 
-        card.appendChild(cardBlock);
-        col4.appendChild(card);
-
-        document.querySelector(".row").appendChild(col4);
-    }
+    document.querySelector(".row").appendChild(col4);
+  }
 }

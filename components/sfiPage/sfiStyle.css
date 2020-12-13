@@ -1,177 +1,159 @@
 :root {
-    --nav-TextColor: rgb(240, 240, 240);
-    --nav-DropBG: rgb(241, 241, 241);
-    --nav-DropTextColor: rgb(37, 37, 37);
-
+  --nav-TextColor: rgb(240, 240, 240);
+  --nav-DropBG: rgb(241, 241, 241);
+  --nav-DropTextColor: rgb(37, 37, 37);
 }
-
-
-
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    color: rgb(209, 200, 200);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: rgb(209, 200, 200);
 }
 
 body {
-    background: rgb(224, 224, 224);
+  background: rgb(224, 224, 224);
 }
 
-
 #hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #hero img {
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    top: 0;
-    filter: brightness(30%);
-
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  top: 0;
+  filter: brightness(30%);
 }
 
 #hero .sfiFront {
-    height: 105vh;
-    object-fit: cover;
+  height: 105vh;
+  object-fit: cover;
 }
 
 #hero h1 {
-    color: rgb(180, 0, 0);;
-    font-size: 30px;
-    margin-bottom: 10px;
+  color: rgb(180, 0, 0);
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 #hero p {
-    width: 50%;
-    text-align: center;
-    font-size: .9rem;
-    color: white;
+  width: 50%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
 }
 
 #hero .sfiSubs {
-    margin-top: 100px;
-    text-align: center;
+  margin-top: 100px;
+  text-align: center;
 }
 
 #hero .sfiSubs a {
-    padding: 20px;
-    text-decoration: none;
-    color: rgb(0, 213, 228);
-
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(0, 213, 228);
 }
 
-
 #about {
-    height: auto;
-    margin: 5%;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    font-size: .9rem;
-    justify-content: center;
+  height: auto;
+  margin: 5%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  justify-content: center;
 }
 
 #about .aboutpara {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .programs {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 .programs h1 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .programs p {
-    margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .programs p i {
-    font-weight: bold;
-    margin-bottom: 3px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .unit .contents {
-    background-color: rgba(255, 133, 117, 0.301);
-    padding: 10px;
+  background-color: rgba(255, 133, 117, 0.301);
+  padding: 10px;
 }
-h4{
-  font-family: 'Baloo Chettan 2', cursive;
-  font-size:1.5rem;
-  font-weight:normal;
-  margin-bottom:20px;
-  color:rgb(180, 0, 0);
+h4 {
+  font-family: "Baloo Chettan 2", cursive;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: rgb(180, 0, 0);
 }
 
 /* animations */
 
 /* media  */
-@media(max-width : 600px) {
-    #hero h1 {
-        position: relative;
-        margin-top: 0%;
-        width: 80%;
-        text-align: center;
-        font-size: 15px;
-    }
+@media (max-width: 600px) {
+  #hero h1 {
+    position: relative;
+    margin-top: 0%;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+  }
 
-    #hero p {
-        width: 90%;
-        text-align: center;
-        font-size: 10px;
-    }
+  #hero p {
+    width: 90%;
+    text-align: center;
+  }
 
-    #hero .sfiSubs {
-        margin: 0;
-        text-align: center;
-    }
+  #hero .sfiSubs {
+    margin: 0;
+    text-align: center;
+  }
 
-    #hero .sfiSubs a {
-        padding: 5px;
-        font-size: 10px;
-        display: block;
-    }
+  #hero .sfiSubs a {
+    padding: 5px;
+    font-size: 10px;
+    display: block;
+  }
 
-    #hero img {
-        pointer-events: none;
-        position: absolute;
-        z-index: -1;
-        width: 110%;
-        margin-left: -10px;
-        filter: brightness(31%);
-    }
-
-    #about h1 {
-        font-size: 15px;
-
-    }
-
-    #about {
-
-        font-size: 10px;
-    }
-
+  #hero img {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    margin-left: -10px;
+    filter: brightness(31%);
+  }
 }

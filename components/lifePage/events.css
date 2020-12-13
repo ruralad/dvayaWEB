@@ -1,109 +1,111 @@
-
 #eventsconducted {
-    max-width: 800px;
-    margin: 0 auto;
-    display: none;
+  max-width: 800px;
+  margin: 0 auto;
+  display: none;
 }
 
 article p {
-    color: rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .eventlist {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 }
 
 .eventlist .box {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50vw;
-    height: 250px;
-    background-color: #cecece63;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: fit-content;
+  background-color: #cecece63;
 
-    border-radius: 3px;
-    margin-bottom: 50px;
+  border-radius: 3px;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .eventlist .box .write {
-    margin: 3%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  margin: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .eventlist .box .write h3 {
-    max-width: 90%;
-    color: #7168b5;
+  max-width: 90%;
+  color: #7168b5;
 }
 
 .eventlist .box .write p {
-    color: #252525;
-    font-size: .9rem;
-    text-align: left;
+  color: #252525;
+  font-size: 0.9rem;
+  text-align: left;
 }
 
 .eventlist .box .image {
-    width: 60%;
-    margin: 3%;
-    height: auto;
-    background-color: #cecece63;
+  width: 60%;
+  margin: 3%;
+  height: auto;
+  background-color: #cecece63;
 }
 
 .final {
-    position: relative;
-    max-width: 50%;
+  position: relative;
+  max-width: 50%;
 }
 
 .grad {
-    background: -webkit-linear-gradient(45deg, rgb(232, 56, 255), rgb(139, 141, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(243, 48, 48),
+    rgb(175, 131, 9)
+  );
+  -webkit-background-clip: text;
+  -wrgb(64, 0, 184)color: transparent;
+  margin-bottom: 70px;
 }
 
-@media(max-width:500px){
-    article h1 {
-        font-size: .9rem;
-    }
-    .eventlist .box {
-        align-items: center;
-        width: 90vw;
-        height: auto;
-        flex-direction: column-reverse;
-    }
-    
-    .eventlist .box .write h3 {
-        font-size: 1rem;
-    }
-    
-    .eventlist .box .write p {
-        font-size: .8rem;
-    }
-    
-    .reverse {
-        flex-direction: column-reverse;
-    
-    }
-    
-    .eventlist .box .image {
-        height: 150px;
-    }
-    
-    .grad {
-        text-align: left;
-        font-size: .7rem;
-        margin-top: -20px;
-        margin-left: 20px;
-    }
+@media (max-width: 500px) {
+  article h1 {
+    font-size: 0.9rem;
+  }
+  .eventlist .box {
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .eventlist .box .write h3 {
+    font-size: 1rem;
+  }
+
+  .eventlist .box .write p {
+    font-size: 0.8rem;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .eventlist .box .image {
+    height: 150px;
+  }
+
+  .grad {
+    text-align: left;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }

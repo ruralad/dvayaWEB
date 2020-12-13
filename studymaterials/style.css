@@ -1,0 +1,149 @@
+:root {
+  --nav-TextColor: #141414;
+  --nav-DropBG: #303030;
+  --nav-DropTextColor: #2c2c2c;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+main {
+  padding-top: 50px;
+}
+main h1 {
+  margin: 30px;
+  text-align: center;
+}
+section {
+  margin: 30px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+section a {
+  border: 1px solid #53000000;
+  background-color: #00af75;
+  color: #f0f0f0;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+section a * {
+  display: inline;
+  padding: 10px;
+}
+.textbooks,
+.syllabus,
+.links {
+  background-color: #f0f0f0;
+}
+.textbooks,
+.syllabus,
+.links * {
+  padding: 20px;
+}
+.textbooks {
+  width: 60vw;
+  height: auto;
+}
+.syllabus-and-links {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.syllabus {
+  width: 30vw;
+  height: auto;
+}
+.links {
+  margin-top: 40px;
+  width: 30vw;
+  height: auto;
+}
+
+h3 {
+  color: #303030;
+  margin-bottom: 20px;
+}
+.textbooks ul {
+  margin-left: 15px;
+}
+.textbooks li {
+  font-size: 0.9rem;
+}
+.textbooks li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #afafaf;
+  margin-left: -10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.textbooks li:last-child:after {
+  display: none;
+}
+.textbooks li span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 15px;
+  color: #5f5f5f;
+}
+.syllabus p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.syllabus a {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.links p {
+  font-size: 0.9rem;
+  margin-top: -40px;
+  display: block;
+}
+.links ul {
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.links li {
+  list-style: none;
+  font-size: 0.9rem;
+  margin-bottom: -30px;
+}
+.links a {
+  border: none;
+  background-color: transparent;
+  color: #008a50;
+  margin-right: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textbooks,
+  .syllabus,
+  .links {
+    width: 90vw;
+    margin-top: 40px;
+    margin-left: -15px;
+  }
+  .syllabus-and-links {
+    padding-left: 0;
+  }
+}

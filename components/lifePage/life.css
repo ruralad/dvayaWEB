@@ -1,255 +1,270 @@
 :root {
-    --nav-TextColor: rgb(48, 48, 48);
-    --nav-DropBG: rgb(245, 245, 245);
-    --nav-DropTextColor: rgb(44, 44, 44);
+  --nav-TextColor: rgb(48, 48, 48);
+  --nav-DropBG: rgb(39, 39, 39);
+  --nav-DropTextColor: rgb(44, 44, 44);
 }
-
 
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    color: rgb(209, 200, 200);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: rgb(209, 200, 200);
+  scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  width: 0;
+}
 body {
-    background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  min-height: 100vh;
+  overflow: hidden;
 }
-
-
 main a {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
 }
 
 main a:hover {
-    background: #418eab;
+  background: #418eab;
 }
 
 h1 {
-    color: rgb(46, 46, 46);
-    padding: 4rem 0;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
+  color: rgb(46, 46, 46);
+  padding: 4rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .parallax {
-    position: relative;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    -webkit-perspective-origin: 50% 100%;
-    perspective-origin: 50% 100%;
-    width: 100vw;
-    height: 130vh;
-    overflow-x: hidden;
+  position: relative;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-perspective-origin: 50% 100%;
+  perspective-origin: 50% 100%;
+  width: 100vw;
+  height: 110vh;
+  overflow-x: hidden;
 }
 
 .mountains {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    z-index: -2;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: -2;
 }
 
 .peak,
 .logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
 }
 
 .peak.p0,
 .logo.p0 {
-    -webkit-transform: translateZ(-40px) scale(41);
-    transform: translateZ(-40px) scale(41);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-40px) scale(41);
+  transform: translateZ(-40px) scale(41);
+  overflow-y: hidden;
 }
 
 .peak.p1,
 .logo.p1 {
-    -webkit-transform: translateZ(-25px) scale(26);
-    transform: translateZ(-25px) scale(26);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-25px) scale(26);
+  transform: translateZ(-25px) scale(26);
+  overflow-y: hidden;
 }
 
 .peak.p2,
 .logo.p2 {
-    -webkit-transform: translateZ(-15px) scale(16);
-    transform: translateZ(-15px) scale(16);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-15px) scale(16);
+  transform: translateZ(-15px) scale(16);
+  overflow-y: hidden;
 }
 
 .peak.p3,
 .logo.p3 {
-    -webkit-transform: translateZ(-8px) scale(9);
-    transform: translateZ(-8px) scale(9);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-8px) scale(9);
+  transform: translateZ(-8px) scale(9);
+  overflow-y: hidden;
 }
 
 .peak.p4,
 .logo.p4 {
-    -webkit-transform: translateZ(-5px) scale(6);
-    transform: translateZ(-5px) scale(6);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-5px) scale(6);
+  transform: translateZ(-5px) scale(6);
+  overflow-y: hidden;
 }
 
 .peak.p5,
 .logo.p5 {
-    -webkit-transform: translateZ(-4px) scale(5);
-    transform: translateZ(-4px) scale(5);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-4px) scale(5);
+  transform: translateZ(-4px) scale(5);
+  overflow-y: hidden;
 }
 
 .peak.p6,
 .logo.p6 {
-    -webkit-transform: translateZ(-3px) scale(4);
-    transform: translateZ(-3px) scale(4);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
+  overflow-y: hidden;
 }
 
 .peak.p7,
 .logo.p7 {
-    -webkit-transform: translateZ(-2px) scale(3);
-    transform: translateZ(-2px) scale(3);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+  overflow-y: hidden;
 }
 
 .peak.p8,
 .logo.p8 {
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  overflow-y: hidden;
 }
 
 .peak.p9,
 .logo.p9 {
-    -webkit-transform: translateZ(-0.5px) scale(1.5);
-    transform: translateZ(-0.5px) scale(1.5);
-    overflow-y: hidden;
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  overflow-y: hidden;
 }
 
 .peak img,
 .logo img {
-    position: absolute;
-    width: 110%;
-    height: auto;
-    left: -5%;
-    bottom: -5%;
+  position: absolute;
+  width: 110%;
+  height: auto;
+  left: -5%;
+  bottom: -5%;
 }
 
 .overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(#7168b5), color-stop(50%, #418eab), to(#83b6c9));
-    background: linear-gradient(#7168b5 0%, #418eab 50%, #83b6c9 100%);
-    opacity: 0.7;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#7168b5),
+    color-stop(50%, #418eab),
+    to(#83b6c9)
+  );
+  background: linear-gradient(#7168b5 0%, #418eab 50%, #83b6c9 100%);
+  opacity: 0.7;
 }
 
 .multiply {
-    opacity: 1;
-    mix-blend-mode: overlay;
+  opacity: 1;
+  mix-blend-mode: overlay;
 }
 
 .logo {
-    -webkit-transform: translateZ(-2px) scale(3);
-    transform: translateZ(-2px) scale(3);
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
 }
 
 .logo h1 {
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    width: 100vw;
-    bottom: 29.5vw;
-    padding: 0;
-    text-shadow: 0 50px 20px rgba(0, 0, 0, 0.3);
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100vw;
+  bottom: 29.5vw;
+  padding: 0;
+  text-shadow: 0 50px 20px rgba(0, 0, 0, 0.3);
 }
 
 main {
-    position: relative;
-    width: 100vw;
-    background: #ffffff;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background: #ffffff;
+}
+
+#select {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.select-box {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  background: #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+.select-box:active {
+  color: wheat;
+  background-color: #252525;
+  transform: scale(1.1);
+}
+.select-box span {
+  font-size: 1.1rem;
+  color: #7168b5;
+}
+@media (max-width: 500px) {
+  main {
     height: auto;
-}
+  }
 
-#select{
-    width: 80%;
-    margin-left: 10%;
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .logo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-.select-box{
-    width: 20%;
-    height: 150px;
-    margin-top: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
+    height: 10vh;
+  }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-
-    transition: all .3s ease-out;
-}
-.select-box:active{
-    color: wheat;
-    background-color: #252525;
-    transform: scale(1.1);
-}
-.select-box span{
+  .logo h1 {
     font-size: 2rem;
+    max-width: 70vw;
+    color: #252525;
+  }
+  #select {
+    justify-content: space-evenly;
+    height: 30vh;
+    flex-direction: column;
+  }
+  .select-box {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+  }
+  .select-box span {
+    font-size: 0.9rem;
     color: #7168b5;
-}
-@media(max-width:500px) {
-    main {
-        height: auto;
-    }
-
-    .parallax {
-        height: 100vh;
-        overflow-x: hidden;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;
-    }
-
-    .logo h1 {
-        font-size: 2rem;
-        max-width: 70vw;
-        color: #252525;
-    }
-    .select-box{
-        width: 33%;
-        height: 50px;
-    }
-    .select-box span{
-        font-size: .9rem;
-        color: #7168b5;
-    }
+  }
 }

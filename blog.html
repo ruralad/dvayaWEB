@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Sfi Geci | Dvaya</title>
-    <meta name="title" content="Blog | Dvaya Sfi Geci">
-    <meta name="description" content="Read the latest posts from SFI GEC Idukki Unit on the Dvaya Blog. Know what our strikes & protests are for, what are future events are etc.">
-    <meta name="keywords" content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YVELJMFGX"></script>
+    <meta name="title" content="Blog | Dvaya Sfi Geci" />
+    <meta
+      name="description"
+      content="Read the latest posts from SFI GEC Idukki Unit on the Dvaya Blog. Know what our strikes & protests are for, what are future events are etc."
+    />
+    <meta
+      name="keywords"
+      content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2YVELJMFGX"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2YVELJMFGX');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-2YVELJMFGX");
     </script>
- <!-- fonts -->
- <link
- href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
- rel="stylesheet"
-/>
-<link
- href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap"
- rel="stylesheet"
-/>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="./components/blog/blog.css" />
     <link rel="stylesheet" href="./components/navbar.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="navBar">
       <div id="dvayaBox">
         <img src="./assets/dvayaLogo.webp" alt="DvayaLogo" />
@@ -42,46 +58,53 @@
         /></span>
       </div>
       <div id="rightNav">
-        <div class="hamburger" id="menuBurger" onclick="showDropdown()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <div id="dropdown" class="rectangleDrop">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown" />
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./lifeatgeci.html">Life At Geci</a></li>
               <li class="sfi"><a href="./sfi.html">Sfi Geci</a></li>
-              <li class="seperatingLineNav"></li>
-              <li class="bottomOfNav1">
+              <li class="sfi">
+                <a href="./studymaterials/firstyear.html">Study Materials</a>
+              </li>
+              <li>
                 <a href="./blog.html">Blog</a>
               </li>
-              <li class="bottomOfNav2">
+              <li>
                 <a href="./antiraggingcell.html">Anti-Ragging Cell</a>
               </li>
             </ul>
+            <div class="bottom">
+              <img onclick="goTo('sfi-insta')" src="./assets/instagram.svg" />
+              <img onclick="goTo('sfi-fb')" src="./assets/facebook.svg" />
+              <p>Dvaya, from Sfi Geci</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container text-center">
-        <h3>Sfi Geci Blog</h3>
-          </div>
-         
-         <div class="container">
-           <div class="row">
-             <div class="loading">
-              <div class="circle"></div>
-             </div>         
-           </div>     
-         </div>
-         <div class="container text-center">
-           <h5 class="lowerop footer">all rights reserved by sfi geci. the contents in the blog are not allowed to reuse without the permission from sfi geci unit</h5>
-         </div>
-        
-          
+    <div class="container">
+      <h3 class="head">Sfi Geci Blog</h3>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="loading">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h5 class="lowerop footer">
+        all rights reserved by sfi geci. the contents in the blog are not
+        allowed to reuse without the permission from sfi geci unit
+      </h5>
+    </div>
 
     <script src="./components/blog/blog.js"></script>
     <script src="./components/navApp.js"></script>
-</body>
+  </body>
 </html>
