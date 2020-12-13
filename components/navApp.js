@@ -18,5 +18,8 @@ function change_favicon() {
 change_favicon();
 
 function goTo(url) {
-  window.open(url);
+  if(url=="sfi-insta")
+  window.open("https://instagram.com/sfigeci");
+else if(url=="sfi-fb)
+  window.open("https://www.facebook.com/SFIGECIunit");  
 }
