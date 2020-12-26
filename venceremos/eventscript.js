@@ -98,8 +98,6 @@ function addResults(results) {
     document.querySelector(".all-results").appendChild(newresult);
   }
 
-  document.querySelector(".lastupdate").innerHTML =
-    " Last Updated On " + results[results.length - 1].lastUpdated;
-  document.querySelector("main").style.display = "flex";
+  document.querySelector("#mainResults").style.display = "flex";
   document.querySelector(".loading").style.display = "none";
 }
