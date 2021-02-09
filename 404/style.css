@@ -251,6 +251,7 @@ body {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
+
 .box .box__description .box__button:before {
   content: "";
   position: absolute;

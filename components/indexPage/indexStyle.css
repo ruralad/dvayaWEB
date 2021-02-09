@@ -109,3 +109,20 @@ footer div p {
 .venceremos p {
   padding: 5px;
 }
+
+/* extras */
+.notification-bar {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #61b5ff;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+
+  cursor: pointer;
+}
