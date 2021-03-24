@@ -126,14 +126,23 @@ section {
       border: none;
       cursor: pointer;
     }
+    .disclaimer {
+      color: #c50000;
+      opacity: 0.4;
+      font-size: 0.8rem;
+    }
   }
 }
 
 @media (max-width: 600px) {
   body {
     background-size: 150%;
+    overflow: hidden;
   }
   section {
     flex-direction: column;
+    .container {
+      width: 20em;
+    }
   }
 }

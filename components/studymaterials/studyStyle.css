@@ -142,15 +142,25 @@ section .container button {
   cursor: pointer;
 }
 
+section .container .disclaimer {
+  color: #c50000;
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+
 @media (max-width: 600px) {
   body {
     background-size: 150%;
+    overflow: hidden;
   }
   section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  section .container {
+    width: 20em;
   }
 }
 /*# sourceMappingURL=studyStyle.css.map */
