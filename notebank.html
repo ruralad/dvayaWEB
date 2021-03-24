@@ -2,51 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dvaya | Sfi Gec Idukki</title>
-    <meta name="title" content="Dvaya | Sfi Geci" />
-    <meta
-      name="description"
-      content="Official website of Students Federation Of India Government Engineering College Idukki  Unit."
-    />
-    <meta
-      name="keywords"
-      content="SFI, GECI,Students federation of india, blog, sfi blog, sfi geci blog, sfi geci, sfi protest, gec idukki, government engineering college idukki, dvaya,sfi geci website"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-2YVELJMFGX"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-2YVELJMFGX");
-    </script>
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./components/indexPage/indexStyle.css" />
+    <link rel="stylesheet" href="./components/studymaterials/studyStyle.css" />
     <link rel="stylesheet" href="./components/navbar.css" />
+    <title>Note Banks | Dvaya Sfi Geci</title>
   </head>
-
   <body>
-    <!-- navbar, linked to navbar.css,navApp.js -->
-  
     <div id="navBar">
       <div id="dvayaBox">
         <img src="./assets/dvayaLogo.webp" alt="DvayaLogo" />
@@ -84,30 +52,43 @@
         </div>
       </div>
     </div>
-    <!-- navbar end -->
-    <img
-      src="./assets/college_frontview_compressed.webp"
-      class="image"
-      alt="collegeFrontView"
-    />
-    <main>
-      <h1>തുടങ്ങാൻ ഇതിലും നല്ല സ്ഥലം വേറെ ഇല്ല</h1>
-    </main>
-    <footer>
-      <div>
-        <img
-          class="sfilogo"
-          src="./assets/gecisfiLOGO.webp"
-          alt="sfigeciLogo"
-        />
+
+    <section>
+      <div class="heading">
+        <h1>NOTEBANK</h1>
         <p>
-          Students Federation of India <br />
-          GECI Unit
+          collection of study materials for the students <br />an initiative
+          by<span> sfi geci</span>
         </p>
       </div>
-    </footer>
-    <!-- scripts -->
-    <script src="./components/indexPage/indexApp.js"></script>
+      <div class="container">
+        <h4>Select Your Semester</h4>
+        <div class="select">
+          <select name="semester" id="semester" onchange="showBranches()">
+            <option value="firstyear">S1 & S2</option>
+            <option value="third-semester">S3</option>
+            <option value="fourth-semester">S4</option>
+            <option value="fifth-semester">S5</option>
+            <option value="sixth-semester">S6</option>
+            <option value="seventh-semester">S7</option>
+            <option value="eighth-semester">S8</option>
+          </select>
+        </div>
+        <div class="select" id="hideSelect">
+          <select name="department" id="department" >
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="me">ME</option>
+          </select>
+        </div>
+       
+        <button onclick="goToPage()">Search</button>
+      </div>
+    </section>
+
     <script src="./components/navApp.js"></script>
+    <script src="./components/studymaterials/script.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 {
-    "compile-hero.config": "",
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": null,
 
 }

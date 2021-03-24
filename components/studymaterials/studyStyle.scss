@@ -1,0 +1,139 @@
+$background-color: #ffffff;
+$primary-color: #313131;
+$secondary-color: #e4e4e4;
+$button-color: #2485249f;
+
+%flex {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+%box {
+  background-color: $background-color;
+  box-shadow: 0px 0px 10px 0px #58585857;
+  border-radius: 0.5em;
+}
+
+:root {
+  --nav-TextColor: rgb(26, 26, 26);
+  --nav-DropBG: rgb(29, 29, 29);
+  --nav-DropTextColor: rgb(44, 44, 44);
+}
+#hideSelect {
+  display: none;
+}
+body {
+  position: relative;
+  width: 99.5%;
+  height: auto;
+  overflow: hidden;
+  background-size: 50%;
+  background-image: url("../../assets/patterns/Pattern-Randomized.svg");
+
+  background-color: $background-color;
+  color: $primary-color;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+section {
+  position: absolute;
+  width: 100vw;
+  margin-top: 10%;
+  @extend %flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .heading {
+    height: fit-content;
+
+    p span {
+      font-weight: bold;
+      color: #c50000;
+    }
+  }
+  .container {
+    @extend %box;
+    @extend %flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 30em;
+    min-height: 20em;
+    height: auto;
+    h4 {
+      opacity: 0.5;
+    }
+
+    select {
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      padding: 0 1em 0 0;
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      cursor: inherit;
+      line-height: inherit;
+      color: $primary-color;
+      z-index: 1;
+
+      &::-ms-expand {
+        display: none;
+      }
+
+      outline: none;
+    }
+
+    .select {
+      display: grid;
+      grid-template-areas: "select";
+      align-items: center;
+      position: relative;
+
+      select,
+      &::after {
+        grid-area: select;
+      }
+
+      border-radius: 0.15em;
+      padding: 0.25em 0.5em;
+
+      margin-bottom: 1em;
+      border: 1px solid rgb(143, 143, 143);
+      font-size: 1.1rem;
+      cursor: pointer;
+      line-height: 1.1;
+
+      // Custom arrow
+      &:not(.select--multiple)::after {
+        content: "";
+        justify-self: end;
+        width: 0.6em;
+        height: 0.3em;
+        background-color: $primary-color;
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+      }
+    }
+
+    button {
+      background: $primary-color;
+      padding: 0.6em;
+      border-radius: 0.1rem;
+      color: $secondary-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 150%;
+  }
+  section {
+    flex-direction: column;
+  }
+}
