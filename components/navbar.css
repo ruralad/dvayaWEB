@@ -20,7 +20,7 @@ html {
   color: var(--nav-TextColor);
   left: 10px;
   top: 5px;
-  z-index: 99;
+  z-index: 999;
 }
 
 #dvayaBox img {
@@ -98,7 +98,7 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 99999;
   width: 70%;
   max-width: 330px;
   height: 100%;

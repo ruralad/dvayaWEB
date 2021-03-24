@@ -1,7 +1,7 @@
 $background-color: #ffffff;
 $primary-color: #313131;
 $secondary-color: #e4e4e4;
-$button-color: #2485249f;
+$button-color: #1ddd1d;
 
 %flex {
   display: flex;
@@ -20,24 +20,33 @@ $button-color: #2485249f;
   --nav-DropBG: rgb(29, 29, 29);
   --nav-DropTextColor: rgb(44, 44, 44);
 }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #hideSelect {
   display: none;
 }
-body {
-  position: relative;
-  width: 99.5%;
-  height: auto;
-  overflow: hidden;
-  background-size: 50%;
-  background-image: url("../../assets/patterns/Pattern-Randomized.svg");
 
+body {
   background-color: $background-color;
   color: $primary-color;
 
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  overflow: hidden;
 }
-
+.image {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+}
 section {
   position: absolute;
   width: 100vw;
@@ -63,6 +72,7 @@ section {
     width: 30em;
     min-height: 20em;
     height: auto;
+
     h4 {
       opacity: 0.5;
     }
@@ -83,7 +93,6 @@ section {
       &::-ms-expand {
         display: none;
       }
-
       outline: none;
     }
 
@@ -107,7 +116,6 @@ section {
       cursor: pointer;
       line-height: 1.1;
 
-      // Custom arrow
       &:not(.select--multiple)::after {
         content: "";
         justify-self: end;
@@ -125,7 +133,9 @@ section {
       color: $secondary-color;
       border: none;
       cursor: pointer;
+      margin-bottom: 1em;
     }
+
     .disclaimer {
       color: #c50000;
       opacity: 0.4;
@@ -136,13 +146,27 @@ section {
 
 @media (max-width: 600px) {
   body {
-    background-size: 150%;
     overflow: hidden;
+    .image {
+      width: auto;
+      height: 100%;
+    }
   }
+
   section {
     flex-direction: column;
+
+    .heading {
+      margin-top: 6em;
+    }
+
     .container {
+      margin-top: 3em;
       width: 20em;
+
+      .select {
+        margin-top: 1em;
+      }
     }
   }
 }

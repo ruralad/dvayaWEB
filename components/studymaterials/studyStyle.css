@@ -21,21 +21,32 @@ section .container {
   --nav-DropTextColor: rgb(44, 44, 44);
 }
 
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #hideSelect {
   display: none;
 }
 
 body {
-  position: relative;
-  width: 99.5%;
-  height: auto;
-  overflow: hidden;
-  background-size: 50%;
-  background-image: url("../../assets/patterns/Pattern-Randomized.svg");
   background-color: #ffffff;
   color: #313131;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
 }
 
 section {
@@ -140,6 +151,7 @@ section .container button {
   color: #e4e4e4;
   border: none;
   cursor: pointer;
+  margin-bottom: 1em;
 }
 
 section .container .disclaimer {
@@ -150,8 +162,11 @@ section .container .disclaimer {
 
 @media (max-width: 600px) {
   body {
-    background-size: 150%;
     overflow: hidden;
+  }
+  body .image {
+    width: auto;
+    height: 100%;
   }
   section {
     -webkit-box-orient: vertical;
@@ -159,8 +174,15 @@ section .container .disclaimer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  section .heading {
+    margin-top: 6em;
+  }
   section .container {
+    margin-top: 3em;
     width: 20em;
+  }
+  section .container .select {
+    margin-top: 1em;
   }
 }
 /*# sourceMappingURL=studyStyle.css.map */
