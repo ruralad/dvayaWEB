@@ -50,7 +50,7 @@ body {
   width: 40vw;
   height: 20em;
   border-radius: 1em;
-  background-color: #bd0000;
+  background-color: red;
   background-size: 100%;
   margin: 5em auto;
 }
@@ -78,20 +78,23 @@ body {
 }
 
 .container article {
-  width: 60em;
+  width: 60vw;
   text-align: left;
+  margin: 1em;
+  border: 2px solid red;
+  border-radius: 1em;
 }
 
 .container article p {
-  margin-bottom: 1em;
+  margin: 1em;
   letter-spacing: 0.1px;
 }
 
 footer {
   position: relative;
-  background-color: #bd0000;
   width: 100%;
-  height: 15em;
+  height: 10em;
+  padding: 3em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -101,33 +104,38 @@ footer {
 }
 
 footer .left-footer {
-  height: 3em;
-  position: relative;
+  width: 50%;
+  height: 5vh;
 }
 
 footer .left-footer img {
-  position: absolute;
-  left: -1em;
-  bottom: 1.5em;
   width: 5em;
 }
 
 footer .left-footer p {
-  color: #ffffff;
-  text-align: left;
+  display: block;
+  color: #636363;
 }
 
 footer .right-footer {
-  color: #ffffff;
+  color: #636363;
+  height: 5vh;
+  width: 50%;
 }
 
 @media (max-width: 600px) {
-  .head-rectangle {
+  body {
+    background-position: 50% 5%;
+  }
+  .container .head-rectangle {
     width: 80vw;
     height: 10em;
   }
-  .head-rectangle h1 {
+  .container .head-rectangle h1 {
     font-size: 3rem;
+  }
+  .container article {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=sfiStyle.css.map */

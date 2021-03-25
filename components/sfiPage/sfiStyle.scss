@@ -1,6 +1,6 @@
 $background-color: #ffffff;
 $primary-color: #636363;
-$secondary-color: #bd0000;
+$secondary-color: rgb(255, 0, 0);
 $button-color: #1ddd1d;
 
 %flex {
@@ -74,10 +74,13 @@ body {
     }
   }
   article {
-    width: 60em;
+    width: 60vw;
     text-align: left;
+    margin: 1em;
+    border: 2px solid $secondary-color;
+    border-radius: 1em;
     p {
-      margin-bottom: 1em;
+      margin: 1em;
       letter-spacing: 0.1px;
     }
   }
@@ -85,36 +88,44 @@ body {
 
 footer {
   position: relative;
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
   width: 100%;
-  height: 15em;
+  height: 10em;
+  padding: 3em;
   @extend %flex;
   flex-direction: row;
   justify-content: space-around;
   .left-footer {
-    height: 3em;
-    position: relative;
+    width: 50%;
+    height: 5vh;
     img {
-      position: absolute;
-      left: -1em;
-      bottom: 1.5em;
       width: 5em;
     }
     p {
-      color: $background-color;
-      text-align: left;
+      display: block;
+      color: $primary-color;
     }
   }
   .right-footer {
-    color: $background-color;
+    color: $primary-color;
+    height: 5vh;
+    width: 50%;
   }
 }
 @media (max-width: 600px) {
-  .head-rectangle {
-    width: 80vw;
-    height: 10em;
-    h1 {
-      font-size: 3rem;
+  body {
+    background-position: 50% 5%;
+  }
+  .container {
+    .head-rectangle {
+      width: 80vw;
+      height: 10em;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    article {
+      width: 90%;
     }
   }
 }
