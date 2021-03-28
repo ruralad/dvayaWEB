@@ -1,6 +1,6 @@
 $background-color: #ffffff;
 $primary-color: #636363;
-$secondary-color: rgb(255, 0, 0);
+$secondary-color: #ff0000;
 $button-color: #1ddd1d;
 
 %flex {
@@ -34,9 +34,34 @@ body {
   overflow-x: hidden;
   background-color: $background-color;
   color: $primary-color;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1102%26quot%3b)' fill='none'%3e%3cpath d='M -290.8324656920323%2c413 C -194.83%2c355.4 -2.83%2c141.6 189.1675343079677%2c125 C 381.17%2c108.4 477.17%2c319.2 669.1675343079677%2c330 C 861.17%2c340.8 957.17%2c155.8 1149.1675343079678%2c179 C 1341.17%2c202.2 1571%2c431.6 1629.1675343079678%2c446 C 1687.33%2c460.4 1477.83%2c290 1440%2c251' stroke='rgba(255%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -754.852304407538%2c114 C -658.85%2c180.8 -466.85%2c418.2 -274.85230440753793%2c448 C -82.85%2c477.8 13.15%2c268.8 205.14769559246207%2c263 C 397.15%2c257.2 493.15%2c422 685.147695592462%2c419 C 877.15%2c416 1014.18%2c269.6 1165.147695592462%2c248 C 1316.12%2c226.4 1385.03%2c298.4 1440%2c311' stroke='rgba(255%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -376.3313029171089%2c243 C -280.33%2c271.8 -88.33%2c413.6 103.66869708289104%2c387 C 295.67%2c360.4 391.67%2c119.2 583.6686970828911%2c110 C 775.67%2c100.8 871.67%2c329.2 1063.668697082891%2c341 C 1255.67%2c352.8 1468.4%2c148.4 1543.668697082891%2c169 C 1618.93%2c189.6 1460.73%2c389 1440%2c444' stroke='rgba(255%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1102'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  overflow-x: hidden;
+  #pageBg {
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    #firstWave {
+      stroke: $secondary-color;
+      animation: glow 20s infinite alternate;
+    }
+    #secondWave {
+      animation: glow 20s infinite alternate-reverse;
+      stroke: $secondary-color;
+    }
+    #thirdWave {
+      animation: glow 20s infinite alternate;
+      stroke: $secondary-color;
+    }
+  }
+}
+@keyframes glow {
+  0% {
+    opacity: 0.7;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 .container {
   position: relative;
@@ -88,38 +113,36 @@ body {
 
 footer {
   position: relative;
-  // background-color: $secondary-color;
   width: 100%;
-  height: 10em;
-  padding: 3em;
+  padding: 1em;
+  height: fit-content;
   @extend %flex;
-  flex-direction: row;
-  justify-content: space-around;
-  .left-footer {
-    width: 50%;
-    height: 5vh;
-    img {
-      width: 5em;
-    }
-    p {
-      display: block;
-      color: $primary-color;
-    }
-  }
-  .right-footer {
+  flex-direction: column;
+  p {
+    display: block;
     color: $primary-color;
-    height: 5vh;
-    width: 50%;
+  }
+  img {
+    width: 5em;
   }
 }
 @media (max-width: 600px) {
   body {
-    background-position: 50% 5%;
+    font-size: 14px;
+    #pageBg {
+      width: 100vw;
+      margin-top: -40%;
+    }
+    footer {
+      height: fit-content;
+      text-align: center;
+    }
   }
   .container {
     .head-rectangle {
       width: 80vw;
       height: 10em;
+      background-color: black;
       h1 {
         font-size: 3rem;
       }
