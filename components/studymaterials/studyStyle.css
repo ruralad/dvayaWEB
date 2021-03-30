@@ -1,17 +1,12 @@
 section, section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
 
 section .container {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #58585857;
-          box-shadow: 0px 0px 10px 0px #58585857;
+  box-shadow: 0px 0px 10px 0px #58585857;
   border-radius: 0.5em;
 }
 
@@ -42,17 +37,11 @@ section {
   position: absolute;
   width: 100vw;
   margin-top: 10%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 section .heading {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -62,13 +51,8 @@ section .heading p span {
 }
 
 section .container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   width: 30em;
   min-height: 20em;
   height: auto;
@@ -79,9 +63,7 @@ section .container h4 {
 }
 
 section .container select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -100,12 +82,9 @@ section .container select::-ms-expand {
 }
 
 section .container .select {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "select";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-areas: "select";
+  align-items: center;
   position: relative;
   border-radius: 0.15em;
   padding: 0.25em 0.5em;
@@ -117,20 +96,16 @@ section .container .select {
 }
 
 section .container .select select, section .container .select::after {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: select;
 }
 
 section .container .select:not(.select--multiple)::after {
   content: "";
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   width: 0.6em;
   height: 0.3em;
   background-color: #313131;
-  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
 section .container button {
@@ -154,13 +129,9 @@ section .container .disclaimer {
     overflow: hidden;
   }
   section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   section .container {
     width: 20em;
   }
 }
-/*# sourceMappingURL=studyStyle.css.map */

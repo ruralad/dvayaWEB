@@ -73,18 +73,18 @@
       >
         <g mask='url("#SvgjsMask1000")' fill="none">
           <path
-          id="firstWave"
+            id="firstWave"
             d="M -290.8324656920323,413 C -194.83,355.4 -2.83,141.6 189.1675343079677,125 C 381.17,108.4 477.17,319.2 669.1675343079677,330 C 861.17,340.8 957.17,155.8 1149.1675343079678,179 C 1341.17,202.2 1571,431.6 1629.1675343079678,446 C 1687.33,460.4 1477.83,290 1440,251"
             stroke-width="2"
           ></path>
           <path
-          id="secondWave"
-          d="M -754.852304407538,114 C -658.85,180.8 -466.85,418.2 -274.85230440753793,448 C -82.85,477.8 13.15,268.8 205.14769559246207,263 C 397.15,257.2 493.15,422 685.147695592462,419 C 877.15,416 1014.18,269.6 1165.147695592462,248 C 1316.12,226.4 1385.03,298.4 1440,311"
+            id="secondWave"
+            d="M -754.852304407538,114 C -658.85,180.8 -466.85,418.2 -274.85230440753793,448 C -82.85,477.8 13.15,268.8 205.14769559246207,263 C 397.15,257.2 493.15,422 685.147695592462,419 C 877.15,416 1014.18,269.6 1165.147695592462,248 C 1316.12,226.4 1385.03,298.4 1440,311"
             stroke-width="2"
           ></path>
           <path
-          id="thirdWave"
-          d="M -376.3313029171089,243 C -280.33,271.8 -88.33,413.6 103.66869708289104,387 C 295.67,360.4 391.67,119.2 583.6686970828911,110 C 775.67,100.8 871.67,329.2 1063.668697082891,341 C 1255.67,352.8 1468.4,148.4 1543.668697082891,169 C 1618.93,189.6 1460.73,389 1440,444"
+            id="thirdWave"
+            d="M -376.3313029171089,243 C -280.33,271.8 -88.33,413.6 103.66869708289104,387 C 295.67,360.4 391.67,119.2 583.6686970828911,110 C 775.67,100.8 871.67,329.2 1063.668697082891,341 C 1255.67,352.8 1468.4,148.4 1543.668697082891,169 C 1618.93,189.6 1460.73,389 1440,444"
             stroke-width="2"
           ></path>
         </g>
@@ -101,11 +101,15 @@
       </div>
 
       <div class="button-section">
-        <button>History</button>
-        <button>Active Programs</button>
-        <button>2019-20 Unit</button>
+        <button id="historyButton" class="active" onclick="change(this.id)">
+          History
+        </button>
+        <button id="programsButton" onclick="change(this.id)">
+          Active Programs
+        </button>
+        <button id="unitButton" onclick="change(this.id)">2019-20 Unit</button>
       </div>
-      <article>
+      <article id="historyArticle">
         <p>
           The Students’ Federation of India inherits with pride the
           anti-imperialist, patriotic, secular, democratic, and progressive
@@ -246,13 +250,146 @@
           a social order free from all kinds of exploitation.
         </p>
       </article>
+      <article id="programsArticle" style="display: none">
+        <div class="programs">
+          <h1>Some Of Our Active Programs</h1>
+          <p>
+            <i>ONE RUPEE REVOLUTION</i> <br />
+
+            One rupee revolution was started with the goal of giving financial
+            assistance to those who are suffering from diseases and other
+            problems. On each Friday, a single rupee is collected from every
+            student and it will be donated to the fund.
+          </p>
+          <p>
+            <i>MASHITHANDU</i> <br />
+            In regards with the beginning of the new acadamic year we had
+            provided necessary study materials for the lower and upper primary
+            students. Eventhough we think it's only a little ray of hope but for
+            them it will a great relief and a source of encouragement.
+          </p>
+          <p>
+            <i>OORINORUNU</i> <br />
+            We always give first priority to the lower section of our society
+            and we lend our love to them in the form of food . On 27th of every
+            month we deliver food to people in Kallemada Kudi, a adhivasy
+            colony, as a protest against the brutal murder of the young man
+            named Madhu for stealing food.
+          </p>
+          <p>
+            <i>KAITHAANGU</i> <br />
+            One of the most revolutionary and popular Campaign taken by the SFI
+            GECI that target to help the poor and needy.Under this campaign we
+            provide a full course meal to the patients and bystanders at the
+            Idukki Government Medical College
+          </p>
+        </div>
+      </article>
+      <article id="unitArticle" style="display: none">
+        <div class="contents">
+          <h1>SFI GECI UNIT 2019-2020</h1>
+          <b>Secretary</b> <br />
+          Avinash K C<br />
+          S7 EEE<br />
+          80897 46125<br /><br />
+
+          <b>President</b> <br />
+          Sachin Saburaj<br />
+          S7 ME<br />
+          94962 60961<br /><br />
+
+          <b>Joint Secretary</b> <br />
+          Abhijith T Sunil<br />
+          S5 CS<br />
+          95629 33995<br /><br />
+
+          <b>Joint Secretary</b> <br />
+          AthulRaj K<br />
+          S7 ME<br />
+          90612 01456<br /><br />
+
+          <b>Joint Secretary</b><br />
+          Amarnath P<br />
+          S5 ME<br />
+          81369 56586<br /><br />
+
+          <b>Vice President</b><br />
+          Abhijith K<br />
+          S7 CSE<br />
+          95267 27913<br /><br />
+
+          <b>Vice president</b><br />
+          Devika Sreekumar<br />
+          S7 ECE<br />
+          82816 59738<br /><br />
+
+          <b>Vice president</b><br />
+          Aravind Babu P<br />
+          S7 ME<br />
+          85475 27914<br /><br />
+
+          Adarsh Murali P <br />
+          S7 CS<br />
+          95673 71256<br /><br />
+
+          Akhil C Das<br />
+          S7 ME<br />
+          8547527914<br /><br />
+
+          Adithya B Anil<br />
+          S7 IT<br />
+          94469 09673<br /><br />
+
+          Agrima P T<br />
+          S5 CSE<br />
+          97450 74043<br /><br />
+
+          Sreerag V K<br />
+          S5 ME<br />
+          94964 54399<br /><br />
+
+          Akshay V P<br />
+          S7 CS<br />
+          97472 82024<br /><br />
+
+          Anju A<br />
+          S5 CS<br />
+          70256 08498<br /><br />
+
+          Jinsha Backer<br />
+          S7 IT<br />
+          83049 09689<br /><br />
+
+          Nihal S J<br />
+          S3 ME<br />
+          81380 94784<br /><br />
+
+          Adithya Ramesan<br />
+          S3 EEE<br />
+          94975 25143<br /><br />
+
+          Vaisakhan ML<br />
+          S5 CS <br />
+          95675 68357<br /><br />
+
+          Arun S R<br />
+          S5 EC<br />
+          92074 74490<br /><br />
+
+          Faisal S <br />
+          M3 EC<br />
+          99474 33842<br /><br />
+        </div>
+      </article>
     </div>
     <hr />
     <footer>
       <img src="/assets/gecisfiLOGO.webp" alt="sfigeci-Logo" />
-      <p>Students Federation Of India</p>
-      <p>Government Engineering College Idukki</p>
-      <p>Copyright © 2020 Sfi Geci</p>
+      <div class="about">
+        <p>Students Federation Of India</p>
+        <p>Government Engineering College Idukki</p>
+        <p>Copyright © 2020 Sfi Geci</p>
+      </div>
     </footer>
     <!-- <div class="unit">
             <div class="contents">

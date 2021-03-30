@@ -1,4 +1,4 @@
-.container, .container .head-rectangle, footer {
+body .button-section, .container, .container .head-rectangle, footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +47,35 @@ body #pageBg #secondWave {
 body #pageBg #thirdWave {
   animation: glow 20s infinite alternate;
   stroke: #ff0000;
+}
+
+body .button-section {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 3em 0 3em 0;
+}
+
+body .button-section button {
+  width: 11em;
+  height: 2em;
+  border: 2px solid grey;
+  border-radius: 0.7em;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: color, box-shadow 0.3s ease-in;
+}
+
+body .button-section .active {
+  border-color: #ff0000;
+  color: #ff0000;
+  box-shadow: 0px 2px 5px 0px #727272bf;
 }
 
 @keyframes glow {
@@ -103,11 +132,21 @@ body #pageBg #thirdWave {
   margin: 1em;
   border: 2px solid #ff0000;
   border-radius: 1em;
+  animation: showSlowly 1s ease-in;
 }
 
 .container article p {
   margin: 1em;
   letter-spacing: 0.1px;
+}
+
+@keyframes showSlowly {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -118,9 +157,16 @@ footer {
   flex-direction: column;
 }
 
-footer p {
-  display: block;
-  color: #636363;
+footer .about {
+  width: 100%;
+  height: 2em;
+  text-align: center;
+}
+
+footer .about p {
+  margin-bottom: 1em;
+  padding: 0;
+  height: max-content;
 }
 
 footer img {
@@ -132,12 +178,30 @@ footer img {
     font-size: 14px;
   }
   body #pageBg {
-    width: 100vw;
-    margin-top: -40%;
+    display: none;
+  }
+  body .button-section {
+    margin: 0 0 3em 0;
+    flex-direction: column;
+    height: 7em;
+    justify-content: space-between;
+  }
+  body .button-section button {
+    font-size: 12px;
   }
   body footer {
+    flex-direction: row-reverse;
     height: fit-content;
+    padding: 0.5em;
+  }
+  body footer .about {
+    width: 100%;
     text-align: center;
+  }
+  body footer .about p {
+    padding: 0;
+    height: max-content;
+    width: max-content;
   }
   .container .head-rectangle {
     width: 80vw;
