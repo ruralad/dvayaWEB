@@ -61,7 +61,7 @@ body .button-section {
 body .button-section button {
   width: 11em;
   height: 2em;
-  border: 2px solid grey;
+  border: none;
   border-radius: 0.7em;
   background-color: #ffffff;
   font-size: 1rem;
@@ -72,10 +72,17 @@ body .button-section button {
   transition: color, box-shadow 0.3s ease-in;
 }
 
+body .button-section button:hover {
+  border: 1px solid #80808069;
+}
+
 body .button-section .active {
-  border-color: #ff0000;
   color: #ff0000;
   box-shadow: 0px 2px 5px 0px #727272bf;
+}
+
+body .button-section .active:hover {
+  border: none;
 }
 
 @keyframes glow {
@@ -138,6 +145,23 @@ body .button-section .active {
 .container article p {
   margin: 1em;
   letter-spacing: 0.1px;
+}
+
+.container .programs {
+  margin: 2em;
+}
+
+.container .programs p {
+  margin: 1em 0 0 0;
+}
+
+.container .contents {
+  margin: 2em;
+  text-align: center;
+}
+
+.container .contents h1 {
+  margin-bottom: 2em;
 }
 
 @keyframes showSlowly {
