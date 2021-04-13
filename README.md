@@ -1,3 +1,2 @@
-# Dvaya✨
-official website of SFI GECI Unit <br>
-[visit](https://dvaya.in)
+# Dvaya (discontinued)
+dvaya has been reqritten with gatsby. please check dvaya-gatsby repository
