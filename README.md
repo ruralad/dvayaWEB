@@ -1,2 +1,2 @@
 # Dvaya (discontinued)
-dvaya has been reqritten with gatsby. please check dvaya-gatsby repository
+dvaya has been rewritten with gatsby. please check dvaya-gatsby repository
